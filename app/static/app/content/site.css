@@ -1,0 +1,414 @@
+h1 h2 h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.model_form {
+    margin-top: 45px;
+}
+
+.model_form .phone {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.model_form img {
+    width: 65px;
+    float: left;
+    padding: 5px;
+    margin-top: -10px;
+}
+
+.modal-dialog {
+    right: auto;
+    left: 50%;
+    width: 400px;
+}
+
+.model_form p {
+    color: #ff6b00;
+    font-size: 14px;
+}
+
+.telephone img {
+    width: 65px;
+    margin-top: -18px;
+}
+
+.telephone a {
+    color: #ff6b00;
+    font-size: 22px;
+    margin-left: -65px;
+    font-weight: bold;
+}
+
+.telephone {
+    margin-top: 55px;
+}
+
+.navbar-nav>li>a {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.navbar-nav {
+    float: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-default {
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #d6d4dfb5;
+    border-color: #d6d4df00;
+    text-align: center;
+    transition: .4s;
+}
+
+.bg-overlay {
+    background: #39376999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-image: url('/static/image/header.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.h-100vh {
+    /*height: 100vh;*/
+    height: 600px;
+}
+
+.header_top img {
+    height: 90px;
+}
+
+.header_text h1 {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 190px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header_text h2 {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 330px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.header_text h3 {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 380px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.oformlenie h2 {
+    position: absolute;
+    text-align: left;
+    right: 0;
+    left: 170px;
+    top: 480px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.oformlenie button {
+    position: absolute;
+    text-align: center;
+    right: 170px;
+    bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 30px;
+    background: #ff6b00;
+    border: none;
+    border-radius: 20px;
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    float: none;
+    text-align: center;
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+}
+
+.zakazat_spravku {
+    background-image: url('/static/image/bck2_02.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    /*height: 600px;*/
+    height: auto;
+}
+
+.zakazat {
+    padding: 50px;
+}
+
+.zakazat h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.priem_zayvki,
+.podtverjdenie_zakaza,
+.vipolnenie_zakaza,
+.oplata {
+    background-color: #ff6b00;
+    width: 100%;
+    height: 330px;
+    position: relative;
+}
+
+.priem_zayvki p {
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.podtverjdenie_zakaza p {
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.vipolnenie_zakaza p {
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.oplata p {
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.pz {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: black;
+    top: 10px;
+    border: 1px solid;
+    box-shadow: #000000b3 2px 2px;
+    width: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pz:hover {
+    border: 1px solid;
+    box-shadow: #00000080 4px 4px;
+    transition: .2S;
+}
+
+.podz {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: black;
+    width: 200px;
+    top: 10px;
+    border: 1px solid;
+    box-shadow: #000000b3 2px 2px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.podz:hover {
+    border: 1px solid;
+    box-shadow: #00000080 4px 4px;
+    transition: .2S;
+}
+
+.vipz {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: black;
+    top: 10px;
+    border: 1px solid;
+    box-shadow: #000000b3 2px 2px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.vipz:hover {
+    border: 1px solid;
+    box-shadow: #00000080 4px 4px;
+    transition: .2S;
+}
+
+.opl {
+    position: absolute;
+    background-color: #fff;
+    /* padding: 20px 10px;*/
+    color: black;
+    top: 10px;
+    border: 1px solid;
+    box-shadow: #000000b3 2px 2px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.opl:hover {
+    border: 1px solid;
+    box-shadow: #00000080 4px 4px;
+    transition: .2S;
+}
+
+.podrobno {
+    position: relative;
+    cursor: pointer;
+}
+
+.podrobno img {
+    width: 270px;
+    margin: 20px;
+}
+
+.podrobno a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.spravka_srochno {
+    position: relative;
+}
+
+.spravka_srochno img {
+    width: 270px;
+    margin: 20px;
+}
+
+.spravka_srochno a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.sroki h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: black;
+}
+
+.certificate {
+    background-image: url('/static/image/87_02.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.certificate_ru h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    background-color: #2579be;
+    width: 300px;
+    padding: 15px;
+    color: #fff;
+}
+
+.certificate_uk h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    background-color: #2579be;
+    width: 300px;
+    padding: 15px;
+    color: #fff;
+}
