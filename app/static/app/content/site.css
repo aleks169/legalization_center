@@ -412,3 +412,12 @@ h1 h2 h3 {
     padding: 15px;
     color: #fff;
 }
+
+.dostavka_documentov {
+    background-image: url('/static/image/dostavka.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
+}
