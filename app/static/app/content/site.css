@@ -414,10 +414,10 @@ h1 h2 h3 {
 }
 
  .dostavka{
-	background-image: url('/static/image/87_02.jpg');
+	background-image: url('/static/image/dostavka.jpg');
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 	background-repeat: no-repeat;
-	height: auto;
+	height: auto
 }
