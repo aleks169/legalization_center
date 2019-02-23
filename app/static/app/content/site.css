@@ -40,6 +40,7 @@ h1 h2 h3 {
 	font-size: 22px;
 	margin-left: -65px;
 	font-weight: bold;
+	font-family: 'Roboto Condensed Bold',sans-serif;
 }
 
 .telephone {
@@ -50,6 +51,7 @@ h1 h2 h3 {
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
+	font-family: 'Roboto Condensed Bold',sans-serif;
 }
 
 .navbar-nav {
@@ -60,6 +62,7 @@ h1 h2 h3 {
 	color: #000;
 	font-size: 16px;
 	font-weight: 600;
+	font-family: 'Roboto Condensed Bold',sans-serif;
 }
 
 .navbar-default {
@@ -110,6 +113,7 @@ h1 h2 h3 {
 	text-transform: uppercase;
 	font-size: 50px;
 	font-weight: bold;
+	font-family: 'Roboto Bold', sans-serif;
 }
 
 .header_text h2 {
@@ -122,6 +126,7 @@ h1 h2 h3 {
 	text-transform: uppercase;
 	font-size: 45px;
 	font-weight: bold;
+	font-family: 'Roboto Bold', sans-serif;
 }
 
 .header_text h3 {
@@ -134,6 +139,7 @@ h1 h2 h3 {
 	text-transform: uppercase;
 	font-size: 35px;
 	font-weight: bold;
+	font-family: 'Roboto Bold', sans-serif;
 }
 
 .oformlenie h2 {
@@ -144,24 +150,26 @@ h1 h2 h3 {
 	top: 480px;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
+	font-family: 'Roboto Bold', sans-serif;
 }
 
 .oformlenie button {
 	position: absolute;
 	text-align: center;
 	right: 170px;
-	bottom: 20px;
+	bottom: 35px;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 	padding: 5px 30px;
 	background: #ff6b00;
 	border: none;
 	border-radius: 20px;
 	border-radius: 5px;
+	font-family: 'Roboto Bold', sans-serif;
 }
 
 .navbar-nav {
@@ -382,6 +390,7 @@ h1 h2 h3 {
 	text-transform: uppercase;
 	font-size: 55px;
 	color: black;
+	font-family: 'Open Sans Semibold', sans-serif;
 }
 
 .certificate {
@@ -401,6 +410,7 @@ h1 h2 h3 {
 	width: 300px;
 	padding: 15px;
 	color: #fff;
+	font-family: 'Open Sans Semibold', sans-serif;
 }
 
 .certificate_uk h2 {
@@ -411,13 +421,67 @@ h1 h2 h3 {
 	width: 300px;
 	padding: 15px;
 	color: #fff;
+	font-family: 'Open Sans Semibold', sans-serif;
 }
 
- .dostavka{
+.dostavka{
 	background-image: url('/static/image/dostavka.jpg');
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 	background-repeat: no-repeat;
-	height: auto
+	height: auto;
+}
+.napishite_nam{
+	background-color: #d4e1f7;
+}
+.sposob_oplati{
+	background-image: url('/static/image/1212_02.png');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	background-repeat: no-repeat;
+	height: auto;
+}
+button{
+	background: #ff8803;
+
+
+}
+.nalich{
+	background: #f88e48bf;
+	width: 350px;
+	height: 350px;
+	border-top-left-radius: 40px;
+	padding: 60px;
+}
+.carta{
+	background: #f88e48bf;
+	width: 350px;
+	height: 350px;
+	border-top-left-radius: 40px;
+	padding: 60px;
+}
+.electo_pl{
+	background: #f88e48bf;
+	width: 350px;
+	height: 350px;
+	border-top-left-radius: 40px;
+	padding: 60px;
+}
+.meg_center_lg{
+	background-image: url('/static/image/1_02.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	background-repeat: no-repeat;
+	height: auto;
+}
+.obrazci_spravok{
+	background-image: url('/static/image/86_02.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	background-repeat: no-repeat;
+	height: auto;
 }

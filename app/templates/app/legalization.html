@@ -21,7 +21,7 @@
 		<title>Международный центр легализаций документов</title>
 		<link href="{% static 'app/content/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 		<link href="{% static 'app/content/site.css' %}" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="{% static 'app/content/fonts.css' %}" rel="stylesheet" type="text/css">
 		<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
 		<!--<script src="{% static 'app/scripts/modernizr-2.6.2.js'}"></script>-->
 	</head>
@@ -66,6 +66,11 @@
 															{{form.email}}
 														</div>
 													</div>
+														<div class="col-md-12">
+														<div class="form-group">
+															{{form.phone}}
+														</div>
+													</div>
 												</div>
 												<div class="row">
 													<div class="col-md-12">
@@ -76,6 +81,7 @@
 												</div>
 												<div class="row">
 													<div class="col-md-8">
+														
 														<button class="btn main-btn pull-left" type="submit">Отправить</button>
 													</div>
 												</div>
@@ -190,14 +196,14 @@
 		</div>
 	</div>
 	<!--BLOCK3-->
-	<div class="term_cost">
+	<div class="term_cost certificate">
 		<div class="container">
 			<div class="sroki">
 				<hr>
 				<h2>Сроки и стоимость</h2>
 				<hr>
 			</div>
-			<div class="row certificate">
+			<div class="row">
 				<div class="col-sm-2"></div>
 				<div class="col-sm-4">
 					<div class="certificate_ru">
@@ -227,27 +233,146 @@
 			</div>
 		</div>
 	</div>
+
 	<!--BLOCK4-->
 	<div class="dostavka">
 		<div class="container">
 			<h2>Доставка документов в любую точку испании</h2>
 			<p>С условиями доставки курьерской службы можно ознакомиться здесь</p>
 			<div class="row">
-				<div class="col-sm-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
-				<div class="col-sm-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
-				<div class="col-sm-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
-				<div class="col-sm-4">
-					<a href=""><img alt="" src="{%static '/image/dhl.png'%}"></a>
+				<div class="col-md-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
+				<div class="col-md-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
+				<div class="col-md-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
+				<div class="col-md-4">
+					<a href=""><img style="width:100%" class="embed-responsive-item" alt="" src="{%static '/image/dhl.png'%}"></a>
 				</div>
 				<div class="col-sm-4">
-					<a href=""><img alt="" src="{%static '/image/pony.png'%}"></a>
+					<a href=""><img style="width:100%"  class="embed-responsive-item" alt="" src="{%static '/image/pony.png'%}"></a>
 				</div>
 				<div class="col-sm-4">
-					<a href=""><img alt="" src="{%static '/image/mrw.png'%}"></a>
+					<a href=""><img style="width:100%" class="embed-responsive-item" alt="" src="{%static '/image/mrw.png'%}"></a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="napishite_nam">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Напишите нам и Вы получите ответ <br>
+в течении 20 минут</h2>
+					<form action="" class="contact-form" method="post" role="form" validate="">
+												{% csrf_token %}
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															{{form.name}}
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															{{form.email}}
+														</div>
+													</div>
+															<div class="col-md-12">
+														<div class="form-group">
+															{{form.phone}}
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															{{form.message}}
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-8">
+														<button class="btn main-btn pull-left" type="submit">Отправить</button>
+													</div>
+												</div>
+											</form>
+				</div>
+				<div class="col-sm-6">
+					<img class="img-responsive" alt="" src="{%static '/image/napishite.png'%}">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sposob_oplati">
+		<div class="container">
+			<h2 class="text-center">способы оплаты</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="nalich">
+						<img class="img-responsive" alt="" src="{%static '/image/nal.png'%}">
+						<h4>Наличными</h4>
+						<p>Оплатить лично у нас в офисе в
+Барселоне, киеве, Москве</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+							<div class="carta">
+								<img class="img-responsive" alt="" src="{%static '/image/carta.png'%}">
+								<h4>На счет</h4>
+								<p>Мы принимаем оплату так же
+на счета в испанских банках</p>
+							</div>	
+				</div>
+				<div class="col-md-4">
+						<div class="electo_pl">
+							<img class="img-responsive" alt="" src="{%static '/image/elekto_pl.png'%}">
+							<h4>Электронный
+платеж</h4>
+							<p>Быстро и удобно Вы можете
+произвести электронный
+платеж системой
+PayPal</p>
+						</div>						
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="meg_center_lg text-center">
+	<div class="container">
+		<h2>Международный Центр Легализации<br>
+"ЛЕГАЛИЗУЕМ ES"</h2>
+<hr>
+<p>Команда профессионалов, предоставляющая услуги по истребованию документов, перевода любой сложности и легализации документов из России, Украины, стран СНГ для граждан за рубежом.
+</p>
+<h3>МЫ РАБОТАЕМ 100% ЭФФЕКТИВНО И ЛЕГАЛЬНО
+ДЕЛАЕМ СТАВКУ НА ЧЕСТНОСТЬ И ПОРЯДОЧНОСТЬ</h3>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class=" col-md-4">
+				<img class="img-responsive" alt="" src="{%static '/image/pr.png'%}">
+				<a href=""><img class="img-responsive" alt="" src="{%static '/image/proverka.png'%}"></a>
+			</div>
+				<div class=" col-md-4">
+					<img class="img-responsive" alt="" src="{%static '/image/br.png'%}">
+					<a href=""><img class="img-responsive" alt="" src="{%static '/image/barselona.png'%}"></a>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</div>
+<div class="obrazci_spravok text-center">
+	<div class="container">
+		<h2>Образцы справок</h2>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+					<img class="img-responsive" alt="" src="{%static '/image/7_03.png'%}">
+			</div>
+			<div class="col-md-4">
+					<img class="img-responsive" alt="" src="{%static '/image/7_05.png'%}">
+			</div>
+				<div class="col-md-2"></div>
+		</div>
+		<img class="img-responsive" alt="" src="{%static '/image/zakaz_spr.png'%}">
+	</div>
+</div>
 	<div class="container body-content">
 		{% block content %}{% endblock %}
 	</div>
