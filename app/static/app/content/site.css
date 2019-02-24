@@ -1,6 +1,6 @@
-h1 h2 h3 {
+/*h1 h2 h3 {
 	font-family: 'Roboto Condensed', sans-serif;
-}
+}*/
 
 .model_form {
 	margin-top: 45px;
@@ -210,6 +210,7 @@ h1 h2 h3 {
 	text-transform: uppercase;
 	font-size: 40px;
 	font-weight: bold;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
 .priem_zayvki,
@@ -227,6 +228,7 @@ h1 h2 h3 {
 	padding: 50px 15px 15px 15px;
 	font-size: 20px;
 	text-align: left;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
 .podtverjdenie_zakaza p {
@@ -234,13 +236,26 @@ h1 h2 h3 {
 	padding: 50px 15px 15px 15px;
 	font-size: 20px;
 	text-align: left;
+	font-family: 'Roboto Bold',sans-serif;
 }
+hr {
 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: 0px;
+    border-top: 2px solid #151212;
+    width: 300px;
+
+}
 .vipolnenie_zakaza p {
 	color: #fff;
 	padding: 50px 15px 15px 15px;
 	font-size: 20px;
 	text-align: left;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
 .oplata p {
@@ -248,6 +263,7 @@ h1 h2 h3 {
 	padding: 50px 15px 15px 15px;
 	font-size: 20px;
 	text-align: left;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
 .pz {
@@ -255,9 +271,9 @@ h1 h2 h3 {
 	background-color: #fff;
 	padding: 10px 10px;
 	color: black;
-	top: 10px;
-	border: 1px solid;
-	box-shadow: #000000b3 2px 2px;
+	/*top: 10px;*/
+	/*border: 1px solid;*/
+	box-shadow: #000000b3 4px 4px;
 	width: 200px;
 	left: 50%;
 	margin-right: -50%;
@@ -266,13 +282,10 @@ h1 h2 h3 {
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
-.pz:hover {
-	border: 1px solid;
-	box-shadow: #00000080 4px 4px;
-	transition: .2S;
-}
+
 
 .podz {
 	position: absolute;
@@ -280,9 +293,9 @@ h1 h2 h3 {
 	padding: 10px 10px;
 	color: black;
 	width: 200px;
-	top: 10px;
-	border: 1px solid;
-	box-shadow: #000000b3 2px 2px;
+	/*top: 10px;*/
+	/*border: 1px solid;*/
+	box-shadow: #000000b3 4px 4px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
@@ -292,20 +305,20 @@ h1 h2 h3 {
 	font-weight: bold;
 }
 
-.podz:hover {
+/*.podz:hover {
 	border: 1px solid;
 	box-shadow: #00000080 4px 4px;
 	transition: .2S;
-}
+}*/
 
 .vipz {
 	position: absolute;
 	background-color: #fff;
 	padding: 10px 10px;
 	color: black;
-	top: 10px;
-	border: 1px solid;
-	box-shadow: #000000b3 2px 2px;
+	/*top: 10px;*/
+	/*border: 1px solid;*/
+	box-shadow: #000000b3 4px 4px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
@@ -314,22 +327,23 @@ h1 h2 h3 {
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
-.vipz:hover {
+/*.vipz:hover {
 	border: 1px solid;
 	box-shadow: #00000080 4px 4px;
 	transition: .2S;
 }
-
+*/
 .opl {
 	position: absolute;
 	background-color: #fff;
 	/* padding: 20px 10px;*/
 	color: black;
-	top: 10px;
-	border: 1px solid;
-	box-shadow: #000000b3 2px 2px;
+	/*top: 10px;*/
+	/*border: 1px solid;*/
+	box-shadow: #000000b3 4px 4px;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
@@ -338,14 +352,15 @@ h1 h2 h3 {
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-family: 'Roboto Bold',sans-serif;
 }
 
-.opl:hover {
+/*.opl:hover {
 	border: 1px solid;
 	box-shadow: #00000080 4px 4px;
 	transition: .2S;
 }
-
+*/
 .podrobno {
 	position: relative;
 	cursor: pointer;
@@ -364,6 +379,7 @@ h1 h2 h3 {
 	color: #fff;
 	font-size: 25px;
 	line-height: 50px;
+	font-family: 'Open Sans Semibold' , sans-serif;
 }
 
 .spravka_srochno {
@@ -400,6 +416,7 @@ h1 h2 h3 {
 	position: relative;
 	background-repeat: no-repeat;
 	height: auto;
+	padding-top: 30px;
 }
 
 .certificate_ru h2 {
@@ -411,6 +428,13 @@ h1 h2 h3 {
 	padding: 15px;
 	color: #fff;
 	font-family: 'Open Sans Semibold', sans-serif;
+	box-shadow: #00000080 4px 4px;
+	border-left: 8px solid #fff;
+    box-shadow: #b4abab 2px 2px 5px 3px;
+    border-top: 8px solid #fff;
+    border-right: 8px solid #fff;
+    margin-left: 30px;
+    margin-bottom: 0px;
 }
 
 .certificate_uk h2 {
@@ -422,8 +446,22 @@ h1 h2 h3 {
 	padding: 15px;
 	color: #fff;
 	font-family: 'Open Sans Semibold', sans-serif;
+	box-shadow: #00000080 4px 4px;
+	border-left: 8px solid #fff;
+    box-shadow: #b4abab 2px 2px 5px 3px;
+    border-top: 8px solid #fff;
+    border-right: 8px solid #fff;
+    margin-left: 30px;
+    margin-bottom: 0px;
 }
-
+.work_day{
+	background: #fff;
+		box-shadow: #00000080 4px 4px;
+	border-left: 8px solid #fff;
+    box-shadow: #b4abab 2px 2px 5px 3px;
+    border-top: 8px solid #fff;
+    border-right: 8px solid #fff;
+}
 .dostavka{
 	background-image: url('/static/image/dostavka.jpg');
 	background-size: cover;
