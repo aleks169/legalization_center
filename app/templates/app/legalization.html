@@ -82,13 +82,13 @@
 												<div class="row">
 													<div class="col-md-8">
 														
-														<button class="btn main-btn pull-left" type="submit">Отправить</button>
+														<button><img class="img-responsive img_btn" alt="" src="{%static '/image/btn_otpravka.png'%}"></button>
 													</div>
 												</div>
 											</form>
 										</div><!-- Modal footer -->
 										<div class="modal-footer">
-											<button class="btn btn-danger" data-dismiss="modal" type="button">Закрыть</button>
+											<button class="btn btn-danger" data-dismiss="modal" type="button">X</button>
 										</div>
 									</div>
 								</div>
@@ -189,7 +189,8 @@
 						</div>
 					</div>
 					<div class="podrobno">
-						<img alt="" src="{%static '/image/button_4.png'%}"> <a href="">Подробно</a>
+						<button><img class="img-responsive" alt="" src="{%static '/image/btn_podrobno.png'%}"></button>
+				
 					</div>
 				</div>
 			</div>
@@ -211,9 +212,11 @@
 							из россии<br></h2>
 					</div>
 					<div class="work_day">
-						<p>17 рабочих дней <span>275</span></p>
-						<p>11 рабочих дней <span>340</span></p>
-					</div><a href="">Документы для запроса справки</a>
+						<p>17 рабочих дней <span>275</span><i class="fas fa-euro-sign"></i></p>
+						<p>11 рабочих дней <span>340</span><i class="fas fa-euro-sign"></i></p>
+							<a href="">Документы для запроса справки</a>
+					</div>
+
 				</div>
 				<div class="col-sm-4">
 					<div class="certificate_uk">
@@ -221,16 +224,18 @@
 							из украины<br></h2>
 					</div>
 					<div class="work_day">
-						<p>12 рабочих дней <span>85</span></p>
-						<p>8 рабочих дней <span>125</span></p>
-					</div><a href="">Документы для запроса справки</a>
+						<p>12 рабочих дней <span>85</span><i class="fas fa-euro-sign"></i></p>
+						<p>8 рабочих дней <span>125</span><i class="fas fa-euro-sign"></i></p>
+						<a href="">Документы для запроса справки</a>
+					</div>
 				</div>
 				<div class="col-sm-2"></div>
 				
 			</div>
 			<div class="spravka_srochno text-center">
-					<img alt="" src="{%static '/image/blue_but.png'%}"> <a href="">Заказать<br>
-						справку срочно</a>
+
+<button><img class="img-responsive" alt="" src="{%static '/image/btn_zakaz_sp.png'%}"></button>
+
 				</div>
 		</div>
 	</div>
@@ -241,17 +246,30 @@
 			<h2>Доставка документов в любую точку испании</h2>
 			<p>С условиями доставки курьерской службы можно ознакомиться здесь</p>
 			<div class="row">
-				<div class="col-md-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
-				<div class="col-md-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
-				<div class="col-md-4"><img alt="" src="{%static '/image/strelka.png'%}"></div>
 				<div class="col-md-4">
-					<a href=""><img style="width:100%" class="embed-responsive-item" alt="" src="{%static '/image/dhl.png'%}"></a>
+					<div class="strelki">
+					<img alt="" src="{%static '/image/strelka.png'%}">
+					</div>
+				<div class="dost_img">	
+					
+					<a href="">
+						<img  class="embed-responsive-item" alt="" src="{%static '/image/dhl.png'%}"></a>
+						</div>
 				</div>
 				<div class="col-sm-4">
-					<a href=""><img style="width:100%"  class="embed-responsive-item" alt="" src="{%static '/image/pony.png'%}"></a>
+					<div class="strelki">
+					<img alt="" src="{%static '/image/strelka.png'%}">
+					</div>
+					<div class="dost_img">
+					<a href=""><img class="embed-responsive-item" alt="" src="{%static '/image/pony.png'%}"></a>
+					</div>
 				</div>
 				<div class="col-sm-4">
-					<a href=""><img style="width:100%" class="embed-responsive-item" alt="" src="{%static '/image/mrw.png'%}"></a>
+					<div class="strelki">
+					<img alt="" src="{%static '/image/strelka.png'%}">
+					</div>
+					<div class="dost_img">
+					<a href=""><img  class="embed-responsive-item" alt="" src="{%static '/image/mrw.png'%}"></a></div>
 				</div>
 			</div>
 		</div>
@@ -290,13 +308,15 @@
 												</div>
 												<div class="row">
 													<div class="col-md-8">
-														<button class="btn main-btn pull-left" type="submit">Отправить</button>
+	<button><img class="img-responsive" alt="" src="{%static '/image/btn_otpravka.png'%}"></button>
+
+													
 													</div>
 												</div>
 											</form>
 				</div>
 				<div class="col-sm-6">
-					<img class="img-responsive" alt="" src="{%static '/image/napishite.png'%}">
+					<img  alt="" src="{%static '/image/nap_nam.jpg'%}">
 				</div>
 			</div>
 		</div>
@@ -348,7 +368,8 @@ PayPal</p>
 			<div class="col-md-2"></div>
 			<div class=" col-md-4">
 				<img class="img-responsive" alt="" src="{%static '/image/pr.png'%}">
-				<a href=""><img class="img-responsive" alt="" src="{%static '/image/proverka.png'%}"></a>
+				<div class="img_btn"><button><img class="img-responsive" alt="" src="{%static '/image/proverka.png'%}"></button></div>
+			
 			</div>
 				<div class=" col-md-4">
 					<img class="img-responsive" alt="" src="{%static '/image/br.png'%}">
@@ -371,12 +392,22 @@ PayPal</p>
 			</div>
 				<div class="col-md-2"></div>
 		</div>
-		<img class="img-responsive" alt="" src="{%static '/image/zakaz_spr.png'%}">
+		<div class="img_btn"><button><img class="img-responsive" alt="" src="{%static '/image/zakaz_spr.png'%}"></button></div>
+		
 	</div>
 </div>
+
+
+
+
+
+
+
+
 	<div class="container body-content">
 		{% block content %}{% endblock %}
 	</div>
+
 	<script src="{%static 'app/scripts/jquery-1.10.2.js'%}"></script>
 	<script src="{%static 'app/scripts/bootstrap.js'%}"></script>
 	<script src="{%static 'app/scripts/respond.js'%}"></script>
