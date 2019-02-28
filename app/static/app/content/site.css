@@ -2,343 +2,347 @@
 	font-family: 'Roboto Condensed', sans-serif;
 }*/
 
+.navigations {
+    line-height: 15px;
+    margin-left: 70px;
+}
 .model_form {
-	margin-top: 45px;
+    margin-top: 45px;
 }
 .model_form .phone {
-	color: black;
-	font-weight: bold;
-	font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
 }
 .model_form img {
-	width: 65px;
-	float: left;
-	padding: 5px;
-	margin-top: -10px;
+    width: 65px;
+    float: left;
+    padding: 5px;
+    margin-top: -10px;
 }
 .modal-dialog {
-	right: auto;
-	left: 50%;
-	width: 400px;
+    right: auto;
+    left: 50%;
+    width: 400px;
 }
 .model_form p {
-	color: #ff6b00;
-	font-size: 14px;
+    color: #ff6b00;
+    font-size: 14px;
 }
 .telephone img {
-	width: 65px;
-	margin-top: -18px;
+    width: 65px;
+    margin-top: -18px;
 }
 .telephone a {
-	color: #ff6b00;
-	font-size: 22px;
-	margin-left: -65px;
-	font-weight: bold;
-	font-family: 'Roboto Condensed Bold',sans-serif;
+    color: #ff6b00;
+    font-size: 22px;
+    margin-left: -65px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed Bold', sans-serif;
 }
 .telephone {
-	margin-top: 55px;
+    margin-top: 55px;
 }
-.navbar-nav > li > a {
-	text-align: center;
-	text-transform: uppercase;
-	width: 100%;
-	font-family: 'Roboto Condensed Bold',sans-serif;
+.navbar-nav>li>a {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: 'Roboto Condensed Bold', sans-serif;
 }
 .navbar-nav {
-	float: none;
+    float: none;
 }
-.navbar-default .navbar-nav > li > a {
-	color: #000;
-	font-size: 16px;
-	font-weight: 600;
-	font-family: 'Roboto Condensed Bold',sans-serif;
-}
-.navbar-default {
-	color: #fff;
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Roboto Condensed Bold', sans-serif;
 }
 .navbar-default {
-	background-color: #d6d4dfb5;
-	border-color: #d6d4df00;
-	text-align: center;
-	transition: .4s;
+    color: #fff;
+}
+.navbar-default {
+    background-color: #d6d4dfb5;
+    border-color: #d6d4df00;
+    text-align: center;
+    transition: .4s;
 }
 .bg-overlay {
-	background: #39376999;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
+    background: #39376999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 .header {
-	background-image: url('/static/image/header.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
+    background-image: url('/static/image/header.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
 }
 .h-100vh {
-	height: 600px;
+    height: 600px;
 }
 .header_top img {
-	height: 90px;
+    height: 90px;
 }
 .header_text h1 {
-	position: absolute;
-	text-align: center;
-	right: 0;
-	left: 0;
-	top: 190px;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 50px;
-	font-weight: bold;
-	font-family: 'Roboto Bold', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 190px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .header_text h2 {
-	position: absolute;
-	text-align: center;
-	right: 0;
-	left: 0;
-	top: 330px;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 45px;
-	font-weight: bold;
-	font-family: 'Roboto Bold', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 330px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .header_text h3 {
-	position: absolute;
-	text-align: center;
-	right: 0;
-	left: 0;
-	top: 380px;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 35px;
-	font-weight: bold;
-	font-family: 'Roboto Bold', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 380px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .oformlenie h2 {
-	position: absolute;
-	text-align: left;
-	right: 0;
-	left: 170px;
-	top: 480px;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: 'Roboto Bold', sans-serif;
+    position: absolute;
+    text-align: left;
+    right: 0;
+    left: 170px;
+    top: 480px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .oformlenie button {
-	position: absolute;
-	text-align: center;
-	right: 170px;
-	bottom: 35px;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 5px 30px;
-	background: #ff6b00;
-	border: none;
-	border-radius: 20px;
-	border-radius: 5px;
-	font-family: 'Roboto Bold', sans-serif;
+    position: absolute;
+    text-align: center;
+    right: 170px;
+    bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 30px;
+    background: #ff6b00;
+    border: none;
+    border-radius: 20px;
+    border-radius: 5px;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .navbar-nav {
-	float: none;
-	text-align: center;
+    float: none;
+    text-align: center;
 }
 .navbar-nav li {
-	float: none;
-	display: inline-block;
+    float: none;
+    display: inline-block;
 }
 .modal-backdrop {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 0;
-	background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
 }
 .zakazat_spravku {
-	background-image: url('/static/image/bck2_02.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
-	height: auto;
+    background-image: url('/static/image/bck2_02.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
 }
 .zakazat {
-	padding: 50px;
+    padding: 50px;
 }
 .zakazat h2 {
-	text-transform: uppercase;
-	font-size: 40px;
-	font-weight: bold;
-	font-family: 'Roboto Bold',sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
-.priem_zayvki,
-.podtverjdenie_zakaza,
-.vipolnenie_zakaza,
-.oplata {
-	background-color: #ff6b00;
-	width: 100%;
-	height: 330px;
-	position: relative;
+.priem_zayvki, .podtverjdenie_zakaza, .vipolnenie_zakaza, .oplata {
+    background-color: #ff6b00;
+    width: 100%;
+    height: 330px;
+    position: relative;
 }
 .priem_zayvki p {
-	color: #fff;
-	padding: 50px 15px 15px 15px;
-	font-size: 20px;
-	text-align: left;
-	font-family: 'Roboto Bold',sans-serif;
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .podtverjdenie_zakaza p {
-	color: #fff;
-	padding: 50px 15px 15px 15px;
-	font-size: 20px;
-	text-align: left;
-	font-family: 'Roboto Bold',sans-serif;
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Roboto Bold', sans-serif;
 }
-hr {
+.form_nap{
+	width: 80%;
+    margin: 0 auto;
+}
 
+hr {
     margin-top: 0px;
     margin-bottom: 0px;
     border: 0;
-        border-top-color: currentcolor;
-        border-top-style: none;
-        border-top-width: 0px;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
     border-top: 2px solid #151212;
     width: 300px;
-
 }
 .vipolnenie_zakaza p {
-	color: #fff;
-	padding: 50px 15px 15px 15px;
-	font-size: 20px;
-	text-align: left;
-	font-family: 'Roboto Bold',sans-serif;
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .oplata p {
-	color: #fff;
-	padding: 50px 15px 15px 15px;
-	font-size: 20px;
-	text-align: left;
-	font-family: 'Roboto Bold',sans-serif;
+    color: #fff;
+    padding: 50px 15px 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .pz {
-	position: absolute;
-	background-color: #fff;
-	padding: 10px 10px;
-	color: black;
-	box-shadow: #000000b3 4px 4px;
-	width: 200px;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: 'Roboto Bold',sans-serif;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: black;
+    box-shadow: #000000b3 4px 4px;
+    width: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .podz {
-	position: absolute;
-	background-color: #fff;
-	padding: 10px 10px;
-	color: black;
-	width: 200px;
-	box-shadow: #000000b3 4px 4px;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: black;
+    width: 200px;
+    box-shadow: #000000b3 4px 4px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .vipz {
-	position: absolute;
-	background-color: #fff;
-	padding: 10px 10px;
-	color: black;
-	box-shadow: #000000b3 4px 4px;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	width: 200px;
-	z-index: 1;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: 'Roboto Bold',sans-serif;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 10px;
+    color: black;
+    box-shadow: #000000b3 4px 4px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .opl {
-	position: absolute;
-	background-color: #fff;
-	color: black;
-	box-shadow: #000000b3 4px 4px;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	width: 200px;
-	z-index: 1;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: 'Roboto Bold',sans-serif;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    box-shadow: #000000b3 4px 4px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    z-index: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Bold', sans-serif;
 }
 .podrobno {
-	padding: 20px;
+    padding: 20px;
     margin: 20px;
 }
 .podrobno a {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 50%);
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 25px;
-	line-height: 50px;
-	font-family: 'Open Sans Semibold' , sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: 'Open Sans Semibold', sans-serif;
 }
 .spravka_srochno {
-	padding: 20px;
+    padding: 20px;
     margin: 20px;
 }
 .sroki h2 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 55px;
-	color: black;
-	font-family: 'Open Sans Semibold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: black;
+    font-family: 'Open Sans Semibold', sans-serif;
 }
 .certificate {
-	background-image: url('/static/image/87_02.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
-	height: auto;
-	padding-top: 30px;
+    background-image: url('/static/image/87_02.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 30px;
 }
 .certificate_ru h2 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 35px;
-	background-color: #2579be;
-	width: 300px;
-	padding: 15px;
-	color: #fff;
-	font-family: 'Open Sans Semibold', sans-serif;
-	box-shadow: #00000080 4px 4px;
-	border-left: 8px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    background-color: #2579be;
+    width: 300px;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open Sans Semibold', sans-serif;
+    box-shadow: #00000080 4px 4px;
+    border-left: 8px solid #fff;
     box-shadow: #b4abab 2px 2px 5px 3px;
     border-top: 8px solid #fff;
     border-right: 8px solid #fff;
@@ -346,43 +350,43 @@ hr {
     margin-bottom: 0px;
 }
 .certificate_uk h2 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 35px;
-	background-color: #2579be;
-	width: 300px;
-	padding: 15px;
-	color: #fff;
-	font-family: 'Open Sans Semibold', sans-serif;
-	box-shadow: #00000080 4px 4px;
-	border-left: 8px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    background-color: #2579be;
+    width: 300px;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open Sans Semibold', sans-serif;
+    box-shadow: #00000080 4px 4px;
+    border-left: 8px solid #fff;
     box-shadow: #b4abab 2px 2px 5px 3px;
     border-top: 8px solid #fff;
     border-right: 8px solid #fff;
     margin-left: 30px;
     margin-bottom: 0px;
 }
-.work_day{
-	background: #fff;
-		box-shadow: #00000080 4px 4px;
-	border-left: 8px solid #fff;
+.work_day {
+    background: #fff;
+    box-shadow: #00000080 4px 4px;
+    border-left: 8px solid #fff;
     box-shadow: #b4abab 2px 2px 5px 3px;
     border-top: 8px solid #fff;
     border-right: 8px solid #fff;
     position: relative;
     display: block;
 }
-.work_day p{
-	font-size: 30px;
-	font-family: 'Open Sans Semibold', sans-serif;
-	padding: 0px 0px 10px 25px;
+.work_day p {
+    font-size: 30px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    padding: 0px 0px 10px 25px;
 }
-.work_day span{
-	font-weight: bold;
+.work_day span {
+    font-weight: bold;
 }
-.work_day a{
-position: absolute;
-margin-left: 50px;
+.work_day a {
+    position: absolute;
+    margin-left: 50px;
     background-color: #428bca;
     color: #fff;
     bottom: -30px;
@@ -391,111 +395,111 @@ margin-left: 50px;
     text-align: center;
     transform: translateY(-50%)
 }
-.dostavka{
-	background-image: url('/static/image/dostavka.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
-	height: auto;
+.dostavka {
+    background-image: url('/static/image/dostavka.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
 }
-.dostavka h2{
-	font-size: 35px;
-	font-family: 'Open Sans Semibold', sans-serif;
-	text-align: center;
-	text-transform: uppercase;
+.dostavka h2 {
+    font-size: 35px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: normal;
-	color: #fff;
-	line-height: 70px;
+    color: #fff;
+    line-height: 70px;
 }
-.dostavka p{
-	font-size: 25px;
-	font-family: 'Open Sans Semibold', sans-serif;
-	text-align: center;
-	text-transform: uppercase;
+.dostavka p {
+    font-size: 25px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: normal;
-	color: #fff;
+    color: #fff;
 }
-.dost_img{
-	width: 250px;
-	margin: auto;
-	padding: 40px 5px 80px 5px;
+.dost_img {
+    width: 250px;
+    margin: auto;
+    padding: 40px 5px 80px 5px;
 }
-.strelki{
-width: 100px;
-	margin: auto;
-	padding: 20px 0px 20px 0px;
+.strelki {
+    width: 100px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
 }
-.dost_img img{
-	height: 195px;
-	width: 255px;
+.dost_img img {
+    height: 195px;
+    width: 255px;
 }
-.napishite_nam{
-	background-color: #d4e1f7;
+.napishite_nam {
+    background-color: #d4e1f7;
 }
-.napishite_nam h2{
-	text-align: center;
-	color: #ff0000;
-	text-transform: uppercase;
-	font-family: 'Open Sans Regular',sans-serif;
-	font-size: 25px;
-	padding: 20px 0px 20px 0px;
+.nap_nam img {}
+.napishite_nam h2 {
+    text-align: center;
+    color: #ff0000;
+    text-transform: uppercase;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
 }
-.sposob_oplati{
-	background-image: url('/static/image/1212_02.png');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
-	height: auto;
+.sposob_oplati {
+    background-image: url('/static/image/1212_02.png');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
 }
-button{
-background-color: transparent;
+button {
+    background-color: transparent;
     width: 305px;
     height: 60px;
     border: none;
 }
-.img_btn{
-	width: 200px;
+.img_btn {
+    width: 200px;
 }
-.nalich{
-	background: #f88e48bf;
-	width: 350px;
-	height: 350px;
-	border-top-left-radius: 40px;
-	padding: 60px;
+.nalich {
+    background: #f88e48bf;
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 40px;
+    padding: 60px;
 }
-.carta{
-	background: #f88e48bf;
-	width: 350px;
-	height: 350px;
-	border-top-left-radius: 40px;
-	padding: 60px;
+.carta {
+    background: #f88e48bf;
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 40px;
+    padding: 60px;
 }
-.electo_pl{
-	background: #f88e48bf;
-	width: 350px;
-	height: 350px;
-	border-top-left-radius: 40px;
-	padding: 60px;
+.electo_pl {
+    background: #f88e48bf;
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 40px;
+    padding: 60px;
 }
-.meg_center_lg{
-	background-image: url('/static/image/1_02.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
-	height: auto;
+.meg_center_lg {
+    background-image: url('/static/image/1_02.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
 }
-.obrazci_spravok{
-	background-image: url('/static/image/86_02.jpg');
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-	background-repeat: no-repeat;
-	height: auto;
+.obrazci_spravok {
+    background-image: url('/static/image/86_02.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
 }
-
 .btn-danger {
     color: #fff;
     background-color: #d9534f;
