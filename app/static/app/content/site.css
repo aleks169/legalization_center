@@ -207,11 +207,10 @@
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
-.form_nap{
-	width: 80%;
+.form_nap {
+    width: 80%;
     margin: 0 auto;
 }
-
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -437,7 +436,6 @@ hr {
 .napishite_nam {
     background-color: #d4e1f7;
 }
-.nap_nam img {}
 .napishite_nam h2 {
     text-align: center;
     color: #ff0000;
@@ -448,7 +446,7 @@ hr {
 }
 .sposob_oplati {
     background-image: url('/static/image/1212_02.png');
-    background-size: cover;
+    background-size: auto;
     background-position: center center;
     position: relative;
     background-repeat: no-repeat;
@@ -463,26 +461,80 @@ button {
 .img_btn {
     width: 200px;
 }
+.sposob_oplati h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    padding: 20px 20px 50px 20px;
+}
+.blok_nalich {
+    margin-bottom: 100px;
+}
+.blok_carta {
+    margin-bottom: 100px;
+}
+.blok_electo {
+    margin-bottom: 100px;
+}
 .nalich {
     background: #f88e48bf;
-    width: 350px;
     height: 350px;
     border-top-left-radius: 40px;
-    padding: 60px;
+    padding: 20px;
+}
+.nalich img {
+    margin: 0 auto;
+}
+.nalich h4 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    font-family: 'Open Sans Semibold', sans-serif;
+}
+.nalich p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold', sans-serif;
+}
+.carta img {
+    margin: 0 auto;
+}
+.carta h4 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    font-family: 'Open Sans Semibold', sans-serif;
+}
+.carta p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold', sans-serif;
 }
 .carta {
     background: #f88e48bf;
-    width: 350px;
     height: 350px;
     border-top-left-radius: 40px;
-    padding: 60px;
+    padding: 20px;
+}
+.electo_pl img {
+    margin: 0 auto;
+}
+.electo_pl h4 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    font-family: 'Open Sans Semibold', sans-serif;
+}
+.electo_pl p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold', sans-serif;
 }
 .electo_pl {
     background: #f88e48bf;
-    width: 350px;
     height: 350px;
     border-top-left-radius: 40px;
-    padding: 60px;
+    padding: 20px;
 }
 .meg_center_lg {
     background-image: url('/static/image/1_02.jpg');
@@ -491,6 +543,19 @@ button {
     position: relative;
     background-repeat: no-repeat;
     height: auto;
+}
+.meg_center_lg h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-weight: 600;
+    margin-top: 60px;
+}
+.meg_center_lg p {
+    font-size: 30px;
+    font-family: 'Roboto Condensed Regular', sans-serif;
+    margin-top: 50px;
+    text-align: justify;
 }
 .obrazci_spravok {
     background-image: url('/static/image/86_02.jpg');
