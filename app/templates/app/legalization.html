@@ -1,643 +1,664 @@
-{% load staticfiles %} 
+{% load staticfiles %}
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-        </title>
-    </head>
-    <body>
-        <head>
-            <title>
-            </title>
-        </head>
-        <head>
-            <meta charset="utf-8">
-                <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                    <meta content="telephone=yes" name="format-detection">
-                        <title>
-                            Международный центр легализаций документов
-                        </title>
-                        <link href="{% static 'app/content/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-                            <link href="{% static 'app/content/site.css' %}" rel="stylesheet" type="text/css">
-                                <link href="{% static 'app/content/fonts.css' %}" rel="stylesheet" type="text/css">
-                                    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
-                                        <!--<script src="{% static 'app/scripts/modernizr-2.6.2.js'}"></script>-->
-                                    </link>
-                                </link>
-                            </link>
-                        </link>
-                    </meta>
-                </meta>
-            </meta>
-        </head>
-        <!--BlOCK 1 -->
-        <div class="header h-100vh">
-            <div class="bg-overlay">
-                <div class="navbar navbar-default navbar-fixed-top">
-                    <div class="container">
-                        <div class="navigations">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="header_top">
-                                        <a class="navbar-brand" href="/">
-                                            <img alt="" class="img-responsive " height="90" src="{% static '/image/logo.png' %}" width="325"/>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="telephone">
-                                        <img alt="" src="{% static '/image/telephone-line.png' %}">
-                                            <a class="call" href="tel:+34627677626">
-                                                +34 627 677 626
-                                            </a>
-                                        </img>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="model_form text-left">
-                                        <img alt="" src="{% static '/image/talking.png' %}">
-                                            <a data-target="#myModal" data-toggle="modal" href="">
-                                                <span class="phone">
-                                                    Мы вам перезвоним
-                                                </span>
-                                                <br>
-                                                    <p>
-                                                        Оставьте ваш номер телефона
-                                                    </p>
-                                                    <br>
-                                                    </br>
-                                                </br>
-                                            </a>
-                                        </img>
-                                    </div>
-                                    <!-- The Modal -->
-                                    <div class="modal fade" id="myModal">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <!-- Modal body -->
-                                                <div class="modal-body">
-                                                    <form action="" class="contact-form" method="post" role="form" validate="">
-                                                        {% csrf_token %}
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    {{form.name}}
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    {{form.email}}
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    {{form.phone}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="form-group">
-                                                                    {{form.message}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-8">
-                                                                <button>
-                                                                    <img alt="" class="img-responsive img_btn" src="{%static '/image/btn_otpravka.png'%}"/>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <!-- Modal footer -->
-                                                <div class="modal-footer">
-                                                    <button class="btn btn-danger" data-dismiss="modal" type="button">
-                                                        X
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="navbar-header">
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li>
-                                    <a href="">
-                                        Как заказать справку
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Сроки и стоимость
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Оплата
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Доставка
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Гарантий
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        О нас
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Контакты
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="header_text">
-                    <h1>
-                        Международный центр
-                        <br>
-                            легализации
-                            <br/>
-                        </br>
-                    </h1>
-                    <h2>
-                        справка о несудимости
-                    </h2>
-                    <h3>
-                        без вашего присутствия
-                    </h3>
-                    <div class="oformlenie text-left">
-                        <h2>
-                            оформление справки о несудимости
-                            <br>
-                                с апостилем в испании без доверенности
-                                <br/>
-                            </br>
-                        </h2>
-                        <button>
-                            Заказать
-                            <br>
-                                сейчас
-                                <br/>
-                            </br>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--BlOCK 2 -->
-        <div class="zakazat_spravku text-center">
-            <div class="container">
-                <div class="zakazat">
-                    <h2>
-                        Как заказать и получить справку
-                        <br>
-                            о несудимости не выходя из дома
-                            <br/>
-                        </br>
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="pz">
-                            <span>
-                                оформляем
-                                <br>
-                                    заказ
-                                    <br/>
-                                </br>
-                            </span>
-                        </div>
-                        <div class="priem_zayvki">
-                            <p>
-                                Отправте запрос на электронную почту или мессенджер.
-                                <br>
-                                    Наши специалисты оформят заказ и рассчитают стоимость.
-                                    <br/>
-                                </br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="podz">
-                            <span>
-                                Вносите
-                                <br>
-                                    предоплату
-                                    <br/>
-                                </br>
-                            </span>
-                        </div>
-                        <div class="podtverjdenie_zakaza">
-                            <p>
-                                Вы вносите
-                                <br>
-                                    предоплату в размере 50% от стоимости заказа
-                                    <br/>
-                                </br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="vipz">
-                            <span>
-                                Выполнение
-                                <br>
-                                    заказа
-                                    <br/>
-                                </br>
-                            </span>
-                        </div>
-                        <div class="vipolnenie_zakaza">
-                            <p>
-                                Мы делаем запрос справки
-                                <br>
-                                    <br>
-                                        Апостилируем ее, выполняем присяжный перевод.
-                                        <br>
-                                            <br/>
-                                        </br>
-                                    </br>
-                                </br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mess">
-                        <div class="col-md-3">
-                            <div class="opl">
-                                <span>
-                                    Получаете
-                                    <br>
-                                        готовую справку
-                                        <br/>
-                                    </br>
-                                </span>
-                            </div>
-                            <div class="oplata">
-                                <p>
-                                    Вы оплачиваете вторую часть заказа и забираете готовый документ у нас в офисе или оформим доставку курьером на указаный Вами адрес.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="podrobno">
-                            <button>
-                                <img alt="" class="img-responsive" src="{%static '/image/btn_podrobno.png'%}"/>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--BLOCK3-->
-        <div class="term_cost certificate">
-            <div class="container">
-                <div class="sroki">
-                    <hr>
-                        <h2>
-                            Сроки и стоимость
-                        </h2>
-                        <hr>
-                        </hr>
-                    </hr>
-                </div>
-                <div class="row">
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="certificate_ru">
-                            <h2>
-                                справка
-                                <br>
-                                    из россии
-                                    <br/>
-                                </br>
-                            </h2>
-                        </div>
-                        <div class="work_day">
-                            <p>
-                                17 рабочих дней
-                                <span>
-                                    275
-                                </span>
-                                <i class="fas fa-euro-sign">
-                                </i>
-                            </p>
-                            <p>
-                                11 рабочих дней
-                                <span>
-                                    340
-                                </span>
-                                <i class="fas fa-euro-sign">
-                                </i>
-                            </p>
-                            <a href="">
-                                Документы для запроса справки
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="certificate_uk">
-                            <h2>
-                                справка
-                                <br>
-                                    из украины
-                                    <br/>
-                                </br>
-                            </h2>
-                        </div>
-                        <div class="work_day">
-                            <p>
-                                12 рабочих дней
-                                <span>
-                                    85
-                                </span>
-                                <i class="fas fa-euro-sign">
-                                </i>
-                            </p>
-                            <p>
-                                8 рабочих дней
-                                <span>
-                                    125
-                                </span>
-                                <i class="fas fa-euro-sign">
-                                </i>
-                            </p>
-                            <a href="">
-                                Документы для запроса справки
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                    </div>
-                </div>
-                <div class="spravka_srochno text-center">
-                    <button>
-                        <img alt="" class="img-responsive" src="{%static '/image/btn_zakaz_sp.png'%}"/>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!--BLOCK4-->
-        <div class="dostavka">
-            <div class="container">
-                <h2>
-                    Доставка документов в любую точку испании
-                </h2>
-                <p>
-                    С условиями доставки курьерской службы можно ознакомиться здесь
-                </p>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="strelki">
-                            <img alt="" src="{%static '/image/strelka.png'%}">
-                            </img>
-                        </div>
-                        <div class="dost_img">
-                            <a href="">
-                                <img alt="" class="embed-responsive-item" src="{%static '/image/dhl.png'%}"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="strelki">
-                            <img alt="" src="{%static '/image/strelka.png'%}">
-                            </img>
-                        </div>
-                        <div class="dost_img">
-                            <a href="">
-                                <img alt="" class="embed-responsive-item" src="{%static '/image/pony.png'%}"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="strelki">
-                            <img alt="" src="{%static '/image/strelka.png'%}">
-                            </img>
-                        </div>
-                        <div class="dost_img">
-                            <a href="">
-                                <img alt="" class="embed-responsive-item" src="{%static '/image/mrw.png'%}"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="napishite_nam">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                    	<div class="form_nap">
-                        <h2>
-                            Напишите нам и Вы получите ответ
-                            <br>
-                                в течении 20 минут
-                            </br>
-                        </h2>
-                        <form action="" class="contact-form" method="post" role="form" validate="">
-                            {% csrf_token %}
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        {{form.name}}
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        {{form.email}}
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        {{form.phone}}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        {{form.message}}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <button>
-                                        <img alt="" class="img-responsive" src="{%static '/image/btn_otpravka.png'%}"/>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 ">
-                        <div class="nap_nam">
-                          <img alt="" class="img-responsive"  src="{%static '/image/napichi.jpg'%}">
-                            </img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sposob_oplati">
-            <div class="container">
-           
-                <h2 class="text-center">
-                    способы оплаты
-                </h2>
-                <div class="row">
-          
-                    <div class="col-md-4">
-                    	<div class="blok_nalich">
-                        <div class="nalich">
-                            <img alt="" class="img-responsive"  src="{%static '/image/nal.png'%}">
-                                <h4>
-                                    Наличными
-                                </h4>
-                                <p>
-                                    Оплатить лично у нас в офисе в
-Барселоне, киеве, Москве
-                                </p>
-                            </img>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                    	<div class="blok_carta">
-                        <div class="carta">
-                            <img alt="" class="img-responsive" src="{%static '/image/carta.png'%}">
-                                <h4>
-                                    На счет
-                                </h4>
-                                <p>
-                                    Мы принимаем оплату так же
-на счета в испанских банках
-                                </p>
-                            </img>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                    	<div class="blok_electo">
-                        <div class="electo_pl">
-                            <img alt="" class="img-responsive" src="{%static '/image/elekto_pl.png'%}">
-                                <h4>
-                                    Электронный
-платеж
-                                </h4>
-                                <p>
-                                    Быстро и удобно Вы можете
-произвести электронный
-платеж системой
-PayPal
-                                </p>
-                            </img>
-                        </div>
-                    </div>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+		<head>
+			<title>
+			</title>
+		</head>
+		<head>
+			<meta charset="utf-8">
+			<meta content="width=device-width, initial-scale=1.0" name="viewport">
+			<meta content="telephone=yes" name="format-detection">
+			<title>
+			Международный центр легализаций документов
+			</title>
+			<link href="{% static 'app/content/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+			<link href="{% static 'app/content/site.css' %}" rel="stylesheet" type="text/css">
+			<link href="{% static 'app/content/fonts.css' %}" rel="stylesheet" type="text/css">
+			<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
+			<link href="{% static 'app/content/media.css' %}" rel="stylesheet" type="text/css">
+			<!--<script src="{% static 'app/scripts/modernizr-2.6.2.js'}"></script>-->
+		</link>
+	</link>
+</link>
+</link>
+</meta>
+</meta>
+</meta>
+</head>
+<!--BlOCK 1 -->
+<div class="header h-100vh">
+<div class="bg-overlay">
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navigations">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="header_top">
+						<a class="navbar-brand" href="/">
+							<img alt="" class="img-responsive " height="90" src="{% static '/image/logo.png' %}" width="325"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="telephone">
+						<img alt="" src="{% static '/image/telephone-line.png' %}">
+						<a class="call" href="tel:+34627677626">
+							+34 627 677 626
+						</a>
+						</img>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="model_form text-left">
+						<img alt="" src="{% static '/image/talking.png' %}">
+						<a data-target="#myModal" data-toggle="modal" href="">
+							<span class="phone">
+								Мы вам перезвоним
+							</span>
+							<br>
+							<p>
+								Оставьте ваш номер телефона
+							</p>
+							<br>
+							</br>
+							</br>
+						</a>
+						</img>
+					</div>
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form action="" class="contact-form" method="post" role="form" validate="">
+										{% csrf_token %}
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													{{form.name}}
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													{{form.email}}
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													{{form.phone}}
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													{{form.message}}
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-8">
+												<button>
+												<img alt="" class="img-responsive img_btn" src="{%static '/image/btn_otpravka.png'%}"/>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button class="btn btn-danger" data-dismiss="modal" type="button">
+									X
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="navbar-header">
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#zakaz_spravku">
+						Как заказать справку
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Сроки и стоимость
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Оплата
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Доставка
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Гарантий
+					</a>
+				</li>
+				<li>
+					<a href="">
+						О нас
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
-                </div>
-            </div>
+<div class="header_text">
+	<h1>
+	Международный центр
+	<br>
+	легализации
+	<br/>
+	</br>
+	</h1>
+	<h2>
+	справка о несудимости
+	</h2>
+	<h3>
+	без вашего присутствия
+	</h3>
+	<div class="oformlenie text-left">
+		<h2>
+		оформление справки о несудимости
+		<br>
+		с апостилем в испании без доверенности
+		<br/>
+		</br>
+		</h2>
+		<button>
+		Заказать
+		<br>
+		сейчас
+		<br/>
+		</br>
+		</button>
+	</div>
+</div>
+</div>
+</div>
+<!--BlOCK 2 -->
+<div class="zakazat_spravku text-center">
+<div class="container">
+<div class="zakazat">
+	<h2>
+	Как заказать и получить справку
+	<br>
+	о несудимости не выходя из дома
+	<br/>
+	</br>
+	</h2>
+</div>
+<div class="row">
+	<div class="col-md-3">
+		<div class="pz">
+			<span>
+				оформляем
+				<br>
+				заказ
+				<br/>
+				</br>
+			</span>
+		</div>
+		<div class="priem_zayvki">
+			<p>
+				Отправте запрос на электронную почту или мессенджер.
+				<br>
+				Наши специалисты оформят заказ и рассчитают стоимость.
+				<br/>
+				</br>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="podz">
+			<span>
+				Вносите
+				<br>
+				предоплату
+				<br/>
+				</br>
+			</span>
+		</div>
+		<div class="podtverjdenie_zakaza">
+			<p>
+				Вы вносите
+				<br>
+				предоплату в размере 50% от стоимости заказа
+				<br/>
+				</br>
+			</p>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="vipz">
+			<span>
+				Выполнение
+				<br>
+				заказа
+				<br/>
+				</br>
+			</span>
+		</div>
+		<div class="vipolnenie_zakaza">
+			<p>
+				Мы делаем запрос справки
+				<br>
+				<br>
+				Апостилируем ее, выполняем присяжный перевод.
+				<br>
+				<br/>
+				</br>
+				</br>
+				</br>
+			</p>
+		</div>
+	</div>
+	
+		<div class="col-md-3">
+			<div class="opl">
+				<span>
+					Получаете
+					<br>
+					готовую справку
+					<br/>
+					</br>
+				</span>
+			</div>
+			<div class="oplata">
+				<p>
+					Вы оплачиваете вторую часть заказа и забираете готовый документ у нас в офисе или оформим доставку курьером на указаный Вами адрес.
+				</p>
+			</div>
+		</div>
+		
+	
+</div>
+</div>
 
-        </div>
-        <div class="meg_center_lg text-center">
-            <div class="container">
-                <h2>
-                    Международный Центр Легализации
-                    <br>
-                        "ЛЕГАЛИЗУЕМ ES"
-                    </br>
-                </h2>
-                <hr>
-                    <p>
-                        Команда профессионалов, предоставляющая услуги по истребованию документов, перевода любой сложности и легализации документов из России, Украины, стран СНГ для граждан за рубежом.
-                    </p>
-                    <h3>
-                        МЫ РАБОТАЕМ 100% ЭФФЕКТИВНО И ЛЕГАЛЬНО
+<div class="podrobno">
+			<button>
+			<img alt="" class="img-responsive" src="{%static '/image/btn_podrobno.png'%}"/>
+			</button>
+		</div>
+
+
+</div>
+
+<!--BLOCK3-->
+<div class="term_cost certificate">
+<div class="container">
+<div class="sroki">
+	<hr>
+	<h2>
+	Сроки и стоимость
+	</h2>
+	<hr>
+	</hr>
+	</hr>
+</div>
+<div class="row">
+	<div class="col-sm-2">
+	</div>
+	<div class="col-sm-4">
+		<div class="certificate_ru">
+			<h2>
+			справка
+			<br>
+			из россии
+			<br/>
+			</br>
+			</h2>
+		</div>
+		<div class="work_day">
+			<p>
+				17 рабочих дней
+				<span>
+					275
+				</span>
+				<i class="fas fa-euro-sign">
+				</i>
+			</p>
+			<p>
+				11 рабочих дней
+				<span>
+					340
+				</span>
+				<i class="fas fa-euro-sign">
+				</i>
+			</p>
+			<a href="">
+				Документы для запроса справки
+			</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="certificate_uk">
+			<h2>
+			справка
+			<br>
+			из украины
+			<br/>
+			</br>
+			</h2>
+		</div>
+		<div class="work_day">
+			<p>
+				12 рабочих дней
+				<span>
+					85
+				</span>
+				<i class="fas fa-euro-sign">
+				</i>
+			</p>
+			<p>
+				8 рабочих дней
+				<span>
+					125
+				</span>
+				<i class="fas fa-euro-sign">
+				</i>
+			</p>
+			<a href="">
+				Документы для запроса справки
+			</a>
+		</div>
+	</div>
+	<div class="col-sm-2">
+	</div>
+</div>
+<div class="spravka_srochno text-center">
+	<button>
+	<img alt="" class="img-responsive" src="{%static '/image/btn_zakaz_sp.png'%}"/>
+	</button>
+</div>
+</div>
+</div>
+<!--BLOCK4-->
+<div class="dostavka">
+<div id="zakaz_spravku"></div>
+<div class="container">
+<h2>
+Доставка документов в любую точку испании
+</h2>
+<p>
+	С условиями доставки курьерской службы можно ознакомиться здесь
+</p>
+<div class="row">
+	<div class="col-md-4">
+		<div class="strelki">
+			<img alt="" src="{%static '/image/strelka.png'%}">
+			</img>
+		</div>
+		<div class="dost_img">
+			<a href="">
+				<img alt="" class="embed-responsive-item" src="{%static '/image/dhl.png'%}"/>
+			</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="strelki">
+			<img alt="" src="{%static '/image/strelka.png'%}">
+			</img>
+		</div>
+		<div class="dost_img">
+			<a href="">
+				<img alt="" class="embed-responsive-item" src="{%static '/image/pony.png'%}"/>
+			</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="strelki">
+			<img alt="" src="{%static '/image/strelka.png'%}">
+			</img>
+		</div>
+		<div class="dost_img">
+			<a href="">
+				<img alt="" class="embed-responsive-item" src="{%static '/image/mrw.png'%}"/>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="napishite_nam">
+<div class="container">
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form_nap">
+			<h2>
+			Напишите нам и Вы получите ответ
+			<br>
+			в течении 20 минут
+			</br>
+			</h2>
+			<form action="" class="contact-form" method="post" role="form" validate="">
+				{% csrf_token %}
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							{{form.name}}
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							{{form.email}}
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							{{form.phone}}
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							{{form.message}}
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<button>
+						<img alt="" class="img-responsive" src="{%static '/image/btn_otpravka.png'%}"/>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="col-sm-6 ">
+		<div class="nap_nam">
+			<img alt="" class="img-responsive"  src="{%static '/image/napichi.jpg'%}">
+			</img>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="sposob_oplati">
+<div class="container">
+
+<h2 class="text-center">
+способы оплаты
+</h2>
+<div class="row">
+	
+	<div class="col-md-4">
+		<div class="blok_nalich">
+			<div class="nalich">
+				<img alt="" class="img-responsive"  src="{%static '/image/nal.png'%}">
+				<h4>
+				Наличными
+				</h4>
+				<p>
+					Оплатить лично у нас в офисе в
+					Барселоне, киеве, Москве
+				</p>
+				</img>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="blok_carta">
+			<div class="carta">
+				<img alt="" class="img-responsive" src="{%static '/image/carta.png'%}">
+				<h4>
+				На счет
+				</h4>
+				<p>
+					Мы принимаем оплату так же
+					на счета в испанских банках
+				</p>
+				</img>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="blok_electo">
+			<div class="electo_pl">
+				<img alt="" class="img-responsive" src="{%static '/image/elekto_pl.png'%}">
+				<h4>
+				Электронный
+				платеж
+				</h4>
+				<p>
+					Быстро и удобно Вы можете
+					произвести электронный
+					платеж системой
+					PayPal
+				</p>
+				</img>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="meg_center_lg text-center">
+<div class="container">
+<h2>
+Международный Центр Легализации
+<br>
+"ЛЕГАЛИЗУЕМ ES"
+</br>
+</h2>
+<hr>
+<p>
+	Команда профессионалов, предоставляющая услуги по истребованию документов, перевода любой сложности и легализации документов из России, Украины, стран СНГ для граждан за рубежом.
+</p>
+<h3>
+МЫ РАБОТАЕМ 100% ЭФФЕКТИВНО И ЛЕГАЛЬНО
 ДЕЛАЕМ СТАВКУ НА ЧЕСТНОСТЬ И ПОРЯДОЧНОСТЬ
-                    </h3>
-                    <div class="row">
-                        <div class="col-md-2">
-                        </div>
-                        <div class=" col-md-4">
-                            <img alt="" class="img-responsive" src="{%static '/image/pr.png'%}">
-                                <div class="img_btn">
-                                    <button>
-                                        <img alt="" class="img-responsive" src="{%static '/image/pro_podlenosti.png'%}"/>
-                                    </button>
-                                </div>
-                           
-                        </div>
-                        <div class=" col-md-4">
-                            <img alt="" class="img-responsive" src="{%static '/image/br.png'%}">
-                              <div class="img_btn">
-                              	<button>
-                                <a href="">
-                                    <img alt="" class="img-responsive" src="{%static '/image/barselona.png'%}"/>
-                                </a>
-                                </button>
-                          
-                        </div>
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                    </div>
-                </hr>
-            </div>
-        </div>
-        <div class="obrazci_spravok text-center">
-            <div class="container">
-                <h2>
-                    Образцы справок
-                </h2>
-                <div class="row">
-                    <div class="col-md-2">
-                    </div>
-                    <div class="col-md-4">
-                        <img alt="" class="img-responsive" src="{%static '/image/7_03.png'%}">
-                        </img>
-                    </div>
-                    <div class="col-md-4">
-                        <img alt="" class="img-responsive" src="{%static '/image/7_05.png'%}">
-                        </img>
-                    </div>
-                    <div class="col-md-2">
-                    </div>
-                </div>
-                <div class="img_btn">
-                    <!--<button>
-                        <img alt="" class="img-responsive" src="{%static '/image/'%}"/>
-                    </button>-->
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            {% block content %}{% endblock %}
-        </div>
-        <script src="{%static 'app/scripts/jquery-1.10.2.js'%}">
-        </script>
-        <script src="{%static 'app/scripts/bootstrap.js'%}">
-        </script>
-        <script src="{%static 'app/scripts/respond.js'%}">
-        </script>
-        <script src="{%static 'app/scripts/main.js'%}">
-        </script>
-        {% block scripts %}{% endblock %}
-    </body>
+</h3>
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class=" col-md-4">
+		<div class="meg_strelki">
+			<img alt="" class="img-responsive" src="{%static '/image/pr.png'%}">
+		</div>
+		<div class="img_btn">
+			<button>
+			<img alt="" class="img-responsive" src="{%static '/image/pro_podlenosti.png'%}"/>
+			</button>
+		</div>
+		
+	</div>
+	<div class=" col-md-4">
+		<div class="meg_strelki">
+			<img alt="" class="img-responsive" src="{%static '/image/br.png'%}">
+		</div>
+		<div class="img_btn">
+			<button>
+			<a href="">
+				<img alt="" class="img-responsive" src="{%static '/image/barselona.png'%}"/>
+			</a>
+			</button>
+			
+		</div>
+	</div>
+	<div class="col-md-2">
+	</div>
+</div>
+</hr>
+</div>
+</div>
+
+
+
+<div class="obrazci_spravok text-center">
+<div class="container">
+<h2>
+Образцы справок
+</h2>
+<div class="row">
+	
+	<div class="col-md-6">
+		<div class="obrz_spr1">
+			<img alt="" class="img-responsive" src="{%static '/image/7_03.png'%}">
+			</img>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="obrz_spr2">
+			<img alt="" class="img-responsive" src="{%static '/image/7_05.png'%}">
+			</img>
+		</div>
+	</div>
+	
+</div>
+<div class="img_btn">
+	<button>
+	<img alt="" class="img-responsive" src="{%static '/image/onlain_03.png'%}"/>
+	</button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="container body-content">
+{% block content %}{% endblock %}
+</div>
+<script src="{%static 'app/scripts/jquery-1.10.2.js'%}">
+</script>
+<script src="{%static 'app/scripts/bootstrap.js'%}">
+</script>
+<script src="{%static 'app/scripts/respond.js'%}">
+</script>
+<script src="{%static 'app/scripts/main.js'%}">
+</script>
+{% block scripts %}{% endblock %}
+</body>
 </html>

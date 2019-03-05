@@ -195,14 +195,14 @@
 }
 .priem_zayvki p {
     color: #fff;
-    padding: 50px 15px 15px 15px;
+    padding: 70px 15px 15px 15px;
     font-size: 20px;
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
 .podtverjdenie_zakaza p {
     color: #fff;
-    padding: 50px 15px 15px 15px;
+    padding: 70px 15px 15px 15px;
     font-size: 20px;
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
@@ -223,14 +223,14 @@ hr {
 }
 .vipolnenie_zakaza p {
     color: #fff;
-    padding: 50px 15px 15px 15px;
+    padding: 70px 15px 15px 15px;
     font-size: 20px;
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
 .oplata p {
     color: #fff;
-    padding: 50px 15px 15px 15px;
+    padding: 70px 15px 15px 15px;
     font-size: 20px;
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
@@ -290,12 +290,12 @@ hr {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    width: 200px;
     z-index: 1;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
+    padding: 10px;
 }
 .podrobno {
     padding: 20px;
@@ -459,7 +459,7 @@ button {
     border: none;
 }
 .img_btn {
-    width: 200px;
+   /* width: 200px;*/
 }
 .sposob_oplati h2 {
     text-transform: uppercase;
@@ -543,10 +543,18 @@ button {
     position: relative;
     background-repeat: no-repeat;
     height: auto;
+    padding: 30px;
 }
 .meg_center_lg h2 {
     text-transform: uppercase;
     font-size: 40px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-weight: 600;
+    margin-top: 60px;
+}
+.meg_center_lg h3 {
+    text-transform: uppercase;
+    font-size: 30px;
     font-family: 'Open Sans Semibold', sans-serif;
     font-weight: 600;
     margin-top: 60px;
@@ -564,7 +572,26 @@ button {
     position: relative;
     background-repeat: no-repeat;
     height: auto;
+    padding: 30px;
 }
+.obrazci_spravok h2{
+	text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed Bold', sans-serif;
+    margin: 40px 0 40px 0;
+}
+.meg_strelki img {
+	margin: auto;
+	padding: 10px;
+}
+.meg_center_lg .img_btn{
+	margin: auto;
+}
+.obrz_spr2 img{
+	height: 420px;
+}
+
 .btn-danger {
     color: #fff;
     background-color: #d9534f;
