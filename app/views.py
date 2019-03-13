@@ -42,17 +42,19 @@ def home(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            body = form.cleaned_data['message']
-           
+            message = form.cleaned_data['message']
+            phone = form.cleaned_data['phone']
+            body = " %s, Сообщение: %s телефон :%s"% (name, message, phone) 
             try:
-                send_mail(name, body, email, ['av591955@gmail.com'])
+                send_mail( body,  email, 'from@example.com',  ['av591955@gmail.com'])
+     
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             #return redirect('thanks')
     return render(request, "app/legalization.html", {'form': form})
 
 def thanks(request):
-    return HttpResponse('Thank you for your message.')
+    return HttpResponse('Thank you for your email, phone, message.')
 
 
        
