@@ -205,10 +205,10 @@
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
-.form_nap {
+/*.form_nap {
     width: 80%;
     margin: 0 auto;
-}
+}*/
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -456,8 +456,8 @@ button {
     height: 60px;
     border: none;
 }
-.img_btn {
-    /* width: 200px;*/
+.img_btn_form {
+    width: 260px;
 }
 .sposob_oplati h2 {
     text-transform: uppercase;

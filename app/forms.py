@@ -11,7 +11,7 @@ class ContactForm(forms.ModelForm):
     name = forms.CharField(max_length=100, widget=forms.TextInput(
         attrs={'placeholder': 'Ваше имя','class':'form-control'}))
     message = forms.CharField(widget=forms.Textarea(
-        attrs={'placeholder': 'Сообщение', 'class':'form-control'}), max_length=100, )
+        attrs={'placeholder': 'С какой страны запросить справку о несудимости', 'class':'form-control'}), max_length=100, )
     email = forms.EmailField(max_length=100, widget=forms.TextInput(
         attrs={'placeholder': 'Ваш Email:','class':'form-control'}))
     phone = forms.CharField(max_length=100, widget=forms.TextInput(
