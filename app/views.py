@@ -46,11 +46,18 @@ def home(request):
             message = form.cleaned_data['message']
             phone = form.cleaned_data['phone']
             body = " %s, Сообщение: %s телефон : %s"% (name, message, phone, ) 
-            from_image = form.cleaned_data['image']
+            files = form.cleaned_data['file']
             #handle_uploaded_file(request.FILES['file'])
             #file = form.cleaned_data[' my_file']
+            context = {
+            'name': name,
+            'email':email,
+            'message':message,
+            'files':files,
+            }
+            email.attach_file(base.files.path)
             try:
-                send_mail( body,  email, from_image,  'from@example.com',
+                send_mail( body,  email, context,  'from@example.com',
     ['av591955@gmail.com'], fail_silently=False)
      
             except BadHeaderError:

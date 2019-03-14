@@ -18,12 +18,12 @@ class ContactForm(forms.ModelForm):
         attrs={'placeholder': 'Ваше телефон','class':'form-control'}))
     #my_file = forms.FileField(widget=FoundationFileInput)
     #my_image = forms.FileField(widget=FoundationImageInput)
-    image = forms.ImageField(max_length=100,widget=forms.FileInput(
+    file = forms.ImageField(max_length=100,widget=forms.FileInput(
         attrs={'class':'form-control'}))
     #file =forms.FileField()
 
     class Meta:
         model = ContactUs
-        fields = ('name', 'email', 'message', 'phone','image')
+        fields = ('name', 'email', 'message', 'phone','file')
 
   
