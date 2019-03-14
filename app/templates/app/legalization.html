@@ -499,7 +499,7 @@
 		в течении 20 минут
 		</br>
 		</h2>
-		<form action="" class="contact-form" method="post" role="form" validate="">
+		<form action="" enctype="multipart/form-data" class="contact-form" method="post" role="form" validate="">
 			{% csrf_token %}
 			<div class="row">
 				<div class="col-md-12">
@@ -534,8 +534,9 @@
 					</button>
 					<p class="text-center">Нажимая на кнопку,  вы даете <br>согласие на обработку своих <br>персональных данных </p>
 				</div>
-				<div class="col-md-2">
-					<i class="fas fa-paperclip">загрузить сканы документов</i>
+				<div class="col-md-2 text-center">
+					<i class="fas fa-paperclip"></i>
+					<p>загрузить сканы документов{{form.image}}</p>
 				</div>
 				
 			</div>

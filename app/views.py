@@ -38,15 +38,20 @@ def home(request):
     if request.method == 'GET':
         form = ContactForm()
     else:
-        form = ContactForm(request.POST)
+        form = ContactForm(request.POST or None, request.FILES or None)
+
         if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             message = form.cleaned_data['message']
             phone = form.cleaned_data['phone']
-            body = " %s, Сообщение: %s телефон :%s"% (name, message, phone) 
+            body = " %s, Сообщение: %s телефон : %s"% (name, message, phone, ) 
+            from_image = form.cleaned_data['image']
+            #handle_uploaded_file(request.FILES['file'])
+            #file = form.cleaned_data[' my_file']
             try:
-                send_mail( body,  email,  ['av591955@gmail.com'])
+                send_mail( body,  email, from_image,  'from@example.com',
+    ['av591955@gmail.com'], fail_silently=False)
      
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
@@ -57,5 +62,3 @@ def thanks(request):
     return HttpResponse('Thank you for your email, phone, message.')
 
 
-       
- 

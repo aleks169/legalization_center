@@ -693,3 +693,10 @@ footer {
         -webkit-transform: translateY(0%);
     }
 }
+
+.fa-paperclip {
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}

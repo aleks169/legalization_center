@@ -5,7 +5,7 @@ Definition of forms.
 from django import forms
 
 from .models import ContactUs
-
+#from foundation_filefield_widget.widgets import FoundationFileInput, FoundationImageInput
 
 class ContactForm(forms.ModelForm):
     name = forms.CharField(max_length=100, widget=forms.TextInput(
@@ -16,10 +16,14 @@ class ContactForm(forms.ModelForm):
         attrs={'placeholder': 'Ваш Email:','class':'form-control'}))
     phone = forms.CharField(max_length=100, widget=forms.TextInput(
         attrs={'placeholder': 'Ваше телефон','class':'form-control'}))
-
-
-
+    #my_file = forms.FileField(widget=FoundationFileInput)
+    #my_image = forms.FileField(widget=FoundationImageInput)
+    image = forms.ImageField(max_length=100,widget=forms.FileInput(
+        attrs={'class':'form-control'}))
+    #file =forms.FileField()
 
     class Meta:
         model = ContactUs
-        fields = ('name', 'email', 'message' ,'phone')
+        fields = ('name', 'email', 'message', 'phone','image')
+
+  
