@@ -16,8 +16,8 @@
 		<link href="{% static 'app/content/media.css' %}" rel="stylesheet" type="text/css">
 
 </head>
-<body   id="myPage" >
-<!--data-spy="scroll" data-target=".navbar" data-offset="60"-->
+<body  id="myPage" >
+
 <div class="header h-100vh">
 <div class="bg-overlay">
 <div class="navbar navbar-default navbar-fixed-top">
@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="header_top">
-					<a class="navbar-brand" href="/">
+					<a class="navbar-brand" href="/"  >
 						<img alt="" class="img-responsive " height="90" src="{% static '/image/logo.png' %}" width="325"/>
 					</a>
 				</div>
@@ -138,7 +138,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="#garantii">
 					Гарантий
 				</a>
 			</li>
@@ -148,7 +148,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#contact">
+				<a href="#contacti">
 					Контакты
 				</a>
 			</li>
@@ -296,11 +296,28 @@
 </div>
 </div>
 <div class="podrobno">
-<button>
+<button  class="" data-toggle="modal" data-target="#processing-modal">
 <img alt="" class="img-responsive" src="{%static '/image/btn_podrobno.png'%}"/>
 </button>
+<div class="podrobno_models">
+<div class="modal modal-static fade" id="processing-modal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+
+                    <img src="{%static '/image/podrobno_2.jpg'%}"  />
+
+                     <button type="button" class="close" style="float: none;" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
+</div>
+</div>
+
 <!--BLOCK3-->
 <div class="term_cost certificate">
 <div class="container" id="sroki_i_stoimost">
@@ -345,11 +362,28 @@
 			<i class="fas fa-euro-sign">
 			</i>
 		</p>
-		<a href="">
+		<a href="" class="" data-toggle="modal" data-target="#processing-modall_ru">
 			Документы для запроса справки
 		</a>
+		<div class="ru_models">
+<div class="modal modal-static fade" id="processing-modall_ru" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+
+                    <img src="{%static '/image/ru_spravka.jpg'%}"  />
+
+                     <button type="button" class="close" style="float: none;" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 	</div>
 </div>
+
 <div class="col-sm-4">
 	<div class="certificate_uk">
 		<h2>
@@ -377,16 +411,32 @@
 			<i class="fas fa-euro-sign">
 			</i>
 		</p>
-		<a href="">
+		<a href="" data-toggle="modal" data-target="#processing-modall_ukr">
 			Документы для запроса справки
 		</a>
+				<div class="ukr_models">
+<div class="modal modal-static fade" id="processing-modall_ukr" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+
+                    <img src="{%static '/image/ukr.jpg'%}"  />
+
+                     <button type="button" class="close" style="float: none;" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 	</div>
 </div>
 <div class="col-sm-2">
 </div>
 </div>
 <div class="spravka_srochno text-center">
-<button>
+<button data-target="#myModal" data-toggle="modal">
 <img alt="" class="img-responsive" src="{%static '/image/btn_zakaz_sp.png'%}"/>
 </button>
 </div>
@@ -408,7 +458,7 @@
 		</img>
 	</div>
 	<div class="dost_img">
-		<a href="">
+		<a href="https://m.dhl.es/es.html">
 			<img alt="" class="embed-responsive-item" src="{%static '/image/dhl.png'%}"/>
 		</a>
 	</div>
@@ -419,7 +469,7 @@
 		</img>
 	</div>
 	<div class="dost_img">
-		<a href="">
+		<a href="https://www.correos.es/es/Satellite/site/pagina-inicio/info">
 			<img alt="" class="embed-responsive-item" src="{%static '/image/pony.png'%}"/>
 		</a>
 	</div>
@@ -430,7 +480,7 @@
 		</img>
 	</div>
 	<div class="dost_img">
-		<a href="">
+		<a href="https://www.mrw.es/sequimiento_envios/MRW_sequimiento_envios.asp">
 			<img alt="" class="embed-responsive-item" src="{%static '/image/mrw.png'%}"/>
 		</a>
 	</div>
@@ -595,7 +645,7 @@
 	</div>
 	<div class="img_btn">
 		<button>
-		<a href="">
+		<a href="http://barcelona-partner.com/">
 			<img alt="" class="img-responsive " src="{%static '/image/barselona.png'%}"/>
 		</a>
 		</button>
@@ -634,6 +684,7 @@
 </div>
 </div>
 <section>
+	<div id="garantii"></div>
 <div class="container">
 <div class="row slideanim">
 <div class="col-sm-4">
@@ -717,6 +768,7 @@
 </div>
 </div>
 </section>
+<div id="contacti"></div>
 <footer class="container-fluid text-center">
 <a href="#myPage" title="To Top">
 <span class="glyphicon glyphicon-chevron-up">

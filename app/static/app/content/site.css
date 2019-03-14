@@ -299,6 +299,27 @@ hr {
     padding: 20px;
     margin: 20px;
 }
+.podrobno_models> .modal-body >.modal-dialog{
+    width: 760px;
+}
+.podrobno_models .modal-dialog{
+    width: 760px;
+}
+.podrobno_models img{
+    width: 100%;
+}
+.ru_models .modal-dialog{
+     width: 760px;
+}
+.ru_models img{
+    width: 100%;
+}
+.ukr_models .modal-dialog{
+    width: 760px;
+}
+.ukr_models img{
+    width: 100%;
+}
 .podrobno a {
     position: absolute;
     left: 50%;
@@ -622,6 +643,7 @@ footer {
     height: 100px;
 }
 .glyphicon {
+
     position: relative;
     top: 25px;
     display: inline-block;
@@ -633,10 +655,13 @@ footer {
     background-color: darkgray;
     padding: 10px;
     font-size: 24px;
-    border-radius: 25px;
+    border-radius: 5px;
     width: 40px;
     height: 40px;
     padding: 5px;
+    right: -183px;
+    left: 45%;
+
 }
 .slideanim {
     visibility: hidden;

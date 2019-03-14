@@ -46,7 +46,7 @@ def home(request):
             phone = form.cleaned_data['phone']
             body = " %s, Сообщение: %s телефон :%s"% (name, message, phone) 
             try:
-                send_mail( body,  email, 'from@example.com',  ['av591955@gmail.com'])
+                send_mail( body,  email,  ['av591955@gmail.com'])
      
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')

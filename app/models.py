@@ -18,3 +18,12 @@ class ContactUs(models.Model):
     def __str__(self):
         # %s подставляет значения
         return "Пользователь %s %s %s" % (self.name, self.email, self.date)
+
+
+
+from django.core.files.storage import FileSystemStorage
+
+     fs = FileSystemStorage(location='/media/photos')
+
+class Spravka(models.Model):
+    photo = models.ImageField(storage=fs)
