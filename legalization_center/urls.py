@@ -17,8 +17,8 @@ import app.views
 urlpatterns = [
     # Examples:
     url(r'^$', app.views.home, name='home'),
-    #url(r'^email/$', views.email, name='email'),
-    #url(r'^about$', app.views.about, name='about'),
+    #url(r'^upload/$', app.views.upload, name='upload'),
+    #url(r'^upload/', app.views.upload, name='upload'),
     #url(r'^admin/', include(admin.site.urls)),
 
     # Uncomment the admin/doc line below to enable admin documentation:

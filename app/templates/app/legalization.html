@@ -504,24 +504,24 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="form-group">
-						{{form.name}}
+						{{ form.form_name }}
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="form-group">
-						{{form.email}}
+						{{form.form_email}}
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="form-group">
-						{{form.phone}}
+						{{form.form_phone}}
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="form-group">
-						{{form.message}}
+						{{form.form_content}}
 					</div>
 				</div>
 			</div>
@@ -534,11 +534,12 @@
 					</button>
 					<p class="text-center">Нажимая на кнопку,  вы даете <br>согласие на обработку своих <br>персональных данных </p>
 				</div>
-				<div class="col-md-2 text-center">
+				<div class="col-md-4 text-center">
 					<i class="fas fa-paperclip"></i>
-					<p>загрузить сканы документов{{form.image}}</p>
+				 
+				{{form.file}}
 				</div>
-				
+	
 			</div>
 		</form>
 	</div>
@@ -776,6 +777,13 @@
 </span>
 </a>
 </footer>
+
+  
+
+
+
+
+
 <div class="container body-content">
 {% block content %}{% endblock %}
 </div>
