@@ -35,72 +35,90 @@ from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from .forms import ContactForm
+from .forms import PrintForm
+#def home(request):
+   # if request.method == 'POST':
+       # form = ContactForm()
+        #form = PrintForm()
+    #else:
+        #form = ContactForm(request.POST or None)
 
-def home(request):
-    if request.method == 'POST':
-        form = ContactForm()
-        form = PrintForm()
-    else:
-        form = ContactForm(request.POST or None)
-
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            from_email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
-            phone = form.cleaned_data['phone']
-            body = " %s, Сообщение: %s телефон : %s"% (name, message, phone, ) 
+        #if form.is_valid():
+            #name = form.cleaned_data['name']
+            #from_email = form.cleaned_data['email']
+            #message = form.cleaned_data['message']
+           # phone = form.cleaned_data['phone']
+           # body = " %s, Сообщение: %s телефон : %s"% (name, message, phone, ) 
     
-            try:
-                send_mail( body,  from_email, 'from@example.com',  
-    ['av591955@gmail.com'], fail_silently=False)
+           # try:
+                #send_mail( body,  from_email, 'from@example.com',  
+    #['av591955@gmail.com'], fail_silently=False)
      
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
+           # except BadHeaderError:
+              #  return HttpResponse('Invalid header found.')
             #return redirect('thanks')
-    return render(request, "app/legalization.html", {'form': form})
+   # return render(request, "app/legalization.html", {'form': form})
 
-def thanks(request):
-    return HttpResponse('Thank you for your email, phone, message.')
+#def thanks(request):
+   # return HttpResponse('Thank you for your email, phone, message.')
 
 
 
 #################################################################################
+#print_form = PrintForm(data=request.POST, request = request)
 
 
-def upload(request):
-    if request.method == 'POST':
-        form = PrintForm(request.POST)
-        #form = PrintForm(data=request.POST, request = request)
+
+def home(request):
+    if request.method == 'GET':
+        contact_form = ContactForm()
+        print_form = PrintForm()
     else:
-   
-        if form.is_valid():
-            form_name = request.POST.get('form_name', '')
-            form_email = request.POST.get('form_email', '')
-            form_content = request.POST.get('form_content', '')
-            form_phone = request.POST.get('form_phone', '')
+        contact_form = ContactForm(request.POST or None)
+        print_form = PrintForm(request.POST or None)
+
+        if contact_form.is_valid():
+            name = contact_form.cleaned_data['contact_name']
+            for_email = contact_form.cleaned_data['contact_email']
+            message = contact_form.cleaned_data['contact_message']
+            phone = contact_form.cleaned_data['contact_phone']
+            
             subject = "New message"
-            body = " %s, Сообщение: %s телефон : %s"% (form_name, form_content, phone, ) 
+            body = " %s, Сообщение: %s телефон : %s"% (name, message, phone) 
+        
+            try:
+                send_mail(subject, body,  for_email, ['av591955@gmail.com'], fail_silently=False)
+     
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            #return redirect('thanks')
+            
+        if print_form.is_valid():
+            print_name= print_form.cleaned_data['print_name']
+            print_email = print_form.cleaned_data['print_email']
+            print_content = print_form.cleaned_data['print_content']
+
+            subject = "New message"
+            body = " %s, Сообщение: %s телефон : %s"% (print_name, print_email, print_content) 
+            
             try:
                 email = EmailMessage(
                     subject,
                     body,
-                    form_email,
+                    print_email,
                     ['av591955@gmail.com'],
-                    headers={'Reply-To': form_email}
+                    headers={'Reply-To': print_email}
                 )
                 if request.FILES:
-                    #uploaded_file = request.POST.get('file')
-                    uploaded_file = request.FILES['file']  # file is the name value which you have provided in form for file field
-                    email.attach('uploaded_file.name, uploaded_file.read(), uploaded_file.content_type')
-                    #message.attach('design.png', img_data, 'image/png')
+                    #uploaded_file = request.POST.get('print_file')
+                    uploaded_file = request.FILES['print_file'] 
+                    email.attach(uploaded_file.name, uploaded_file.read, uploaded_file.content_type)
+                
                 email.send()
             except:
                # return "Attachment error"
                 return HttpResponse('Attachment error')
             #messages.success(request, "Thank you for your message.")
-    #else:
-        #form = PrintForm(request=request)
-    #context_dict = {}
-    #context_dict['printers'] = Printer.objects.all()
-    #context_dict['form'] = form
-    return render(request, 'app/legalization.html',{'form': form})
+        
+            
+    return render(request, "app/legalization.html", {'contact_form': contact_form, 'print_form': print_form})
