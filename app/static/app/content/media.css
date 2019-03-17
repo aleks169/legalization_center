@@ -1,26 +1,129 @@
-/* Смартфоны (портретный и альбомный режимы) ----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Сюда добавляем стили*/
+        /* Смартфоны (портретный и альбомный режимы) ----------- */
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            /* Сюда добавляем стили*/
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h1 {
+                top: 230px;
+                font-size: 25px;
+            }
+            .header_top img {
+                display: none;
+            }
+            .telephone {
+                margin-top: 55px;
+                margin-right: 160px;
+                text-align: center;
+            }
+            .modal-dialog {
+                right: auto;
+                left: 50%;
+                width: 310px;
+                margin: 25px;
+                padding: 0px;
+            }
+            .img_btn_form {
+                width: 160px;
+            }
+            .navbar-default .navbar-nav>li>a {
+                font-size: 15px;
+            }
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h2 {
+                font-size: 25px;
+            }
+        }
+        /* Смартфоны (альбомный режим) ----------- */
+        
+        @media only screen and (min-width: 321px) {
+            /* Сюда добавляем стили*/
+            /*      .header_text h1 {
+        top: 215px;
+        font-size: 30px;
+    }
+      .header_text h1 {
+    top: 230px;
+    font-size: 25px;
+ }
+ .header_top img {
+    display: none;
+    
+ }
+ .telephone {
+    margin-top: 55px;
+    margin-right: 160px;
+    text-align: center;
 }
-/* Смартфоны (альбомный режим) ----------- */
-
-@media only screen and (min-width: 321px) {
-    /* Сюда добавляем стили*/
+.modal-dialog {
+    right: auto;
+    left: 50%;
+    width: 310px;
+    margin: 25px;
+    padding: 0px;
+}
+.img_btn_form {
+    width: 160px;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 15px;
+}
+.header_text h1 {
+    top: 215px;
+    font-size: 30px;
+}
+.header_text h2 {
+    font-size: 25px;
+}
 }
 /* Смартфоны (портретный режим) ----------- */
-
-@media only screen and (max-width: 320px) {
-    /* Сюда добавляем стили*/
-}
-/* iPad (портретный и альбомный режимы) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Сюда добавляем стили*/
-}
-@media only screen and (max-device-width: 768px) {
-    /* Сюда добавляем стили*/
-    .collapse {
+            @media only screen and (max-width: 320px) {
+                .header_text h1 {
+                    top: 215px;
+                    font-size: 30px;
+                }
+                .header_text h1 {
+                    top: 230px;
+                    font-size: 25px;
+                }
+                .header_top img {
+                    display: none;
+                }
+                .telephone {
+                    margin-top: 55px;
+                    margin-right: 160px;
+                    text-align: center;
+                }
+                .modal-dialog {
+                    right: auto;
+                    left: 50%;
+                    width: 310px;
+                    margin: 25px;
+                    padding: 0px;
+                }
+                .img_btn_form {
+                    width: 160px;
+                }
+                .navbar-default .navbar-nav>li>a {
+                    font-size: 15px;
+                }
+                .header_text h1 {
+                    top: 215px;
+                    font-size: 30px;
+                }
+                .header_text h2 {
+                    font-size: 25px;
+                }
+            }
+            /* iPad (портретный и альбомный режимы) ----------- */
+            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                /* Сюда добавляем стили*/
+                /*    .collapse {
         display: block;
     }
     .header_top img {
@@ -75,7 +178,7 @@
         transform: translateX(-50%);
     }
     .certificate_uk{
-    	margin-left: 50%;
+        margin-left: 50%;
         transform: translateX(-50%);
     }
     hr {
@@ -90,45 +193,309 @@
         transform: translateX(-50%);
     }
     .dostavka h2{
-    	font-size: 30px;
-    	line-height: 40px;
+        font-size: 30px;
+        line-height: 40px;
     }
     .dostavka p{
-    	font-size: 20px;
+        font-size: 20px;
     }
 }
-/* iPad (альбомный режим) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* Сюда добавляем стили*/
 }
-/* iPad (портретный режим) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    /* Сюда добавляем стили*/
+@media only screen and (max-device-width: 768px){
+.header_top img {
+    height: 85px;
+    width: 230px;
+    display: none;
 }
-/* Настольные компьютеры и ноутбуки ----------- */
-
-@media only screen and (min-width: 1224px) {
-    /* Сюда добавляем стили*/
+@media only screen and (max-device-width: 768px)and (min-device-width: 480px){
+    .header_top img {
+    height: 85px;
+    width: 230px;
+    display: none;
 }
-/* Большие экраны ----------- */
+ .header_text h1 {
 
-@media only screen and (min-width: 1824px) {
-    /* Сюда добавляем стили*/
+    top: 190px;
+    font-size: 35px;
 }
-/* iPhone 5 (портретный и альбомный режимы)----------- */
+.header_text h2 {
+    top: 300px;
+    font-size: 30px;
+}
+.header_text h3 {
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-    /* Сюда добавляем стили*/
-}
-/* iPhone 5 (альбомный режим)----------- */
+    top: 360px;
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-    /* Сюда добавляем стили*/
+    font-size: 25px;
+ 
 }
-/* iPhone 5 (портретный режим)----------- */
+.oformlenie h2 {
+    top: 480px;
+    font-size: 20px;
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-    /* Сюда добавляем стили*/
 }
+.zak_btn button {
+
+    font-size: 15px;
+
+    padding: 5px 30px;
+
+    width: 150px;
+
+}
+.zak_btn {
+    position: absolute;
+    top: 480px;
+    right: 50px;
+}
+.zakazat h2 {
+
+    font-size: 35px;
+
+}
+
+}
+@media only screen and (max-device-width: 667px) {
+    /* Сюда добавляем стили*/
+                .header_top img {
+                    display: none;
+                }
+                .telephone {
+                    margin-top: 55px;
+                    margin-right: 160px;
+                    text-align: center;
+                }
+                .modal-dialog {
+                    right: auto;
+                    left: 50%;
+                    width: 310px;
+                    margin: 25px;
+                    padding: 0px;
+                }
+                .img_btn_form {
+                    width: 160px;
+                }
+                .collapse {
+                    display: block;
+                }
+                .header_top img {
+                    height: 85px;
+                    width: 230px;
+                }
+                .header_text h1 {
+                    top: 215px;
+                    font-size: 40px;
+                }
+                .header_text h2 {
+                    font-size: 35px;
+                }
+                .header_text h3 {
+                    font-size: 30px;
+                }
+                .oformlenie h2 {
+                    font-size: 20px;
+                    padding: 20px;
+                }
+                .zak_btn {
+                    right: 50px;
+                }
+                .zak_btn button {
+                    font-size: 15px;
+                    width: 130px;
+                }
+                .zakazat h2 {
+                    font-size: 30px;
+                }
+                .priem_zayvki,
+                .podtverjdenie_zakaza,
+                .vipolnenie_zakaza,
+                .oplata {
+                    height: 225px;
+                    margin-bottom: 20px;
+                }
+                .sroki h2 {
+                    font-size: 45px;
+                }
+                .priem_zayvki p {
+                    text-align: center;
+                }
+                .podtverjdenie_zakaza p {
+                    text-align: center;
+                }
+                .vipolnenie_zakaza p {
+                    text-align: center;
+                }
+                .oplata p {
+                    text-align: center;
+                }
+                .certificate_ru {
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+                .certificate_uk {
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+                hr {
+                    width: 200px;
+                }
+                .work_day {
+                    text-align: center;
+                }
+                .work_day a {
+                    margin-left: 0px;
+                    bottom: -15px;
+                    transform: translateX(-50%);
+                }
+                .dostavka h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                .dostavka p {
+                    font-size: 20px;
+                }
+            }
+        }
+        /* iPad (альбомный режим) ----------- */
+        
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+            /* Сюда добавляем стили*/
+        }
+        /* iPad (портретный режим) ----------- */
+        
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+            /* Сюда добавляем стили*/
+        }
+        /* Настольные компьютеры и ноутбуки ----------- */
+        
+        @media only screen and (min-width: 1224px) {
+            /* Сюда добавляем стили*/
+        }
+        /* Большие экраны ----------- */
+        
+        @media only screen and (min-width: 1824px) {
+            /* Сюда добавляем стили*/
+        }
+        /* iPhone 5 (портретный и альбомный режимы)----------- */
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+            /* Сюда добавляем стили*/
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h1 {
+                top: 230px;
+                font-size: 25px;
+            }
+            .header_top img {
+                display: none;
+            }
+            .telephone {
+                margin-top: 55px;
+                margin-right: 160px;
+                text-align: center;
+            }
+            .modal-dialog {
+                right: auto;
+                left: 50%;
+                width: 310px;
+                margin: 25px;
+                padding: 0px;
+            }
+            .img_btn_form {
+                width: 160px;
+            }
+            .navbar-default .navbar-nav>li>a {
+                font-size: 15px;
+            }
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h2 {
+                font-size: 25px;
+            }
+        }
+        /* iPhone 5 (альбомный режим)----------- */
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+            /* Сюда добавляем стили*/
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h1 {
+                top: 230px;
+                font-size: 25px;
+            }
+            .header_top img {
+                display: none;
+            }
+            .telephone {
+                margin-top: 55px;
+                margin-right: 160px;
+                text-align: center;
+            }
+            .modal-dialog {
+                right: auto;
+                left: 50%;
+                width: 310px;
+                margin: 25px;
+                padding: 0px;
+            }
+            .img_btn_form {
+                width: 160px;
+            }
+            .navbar-default .navbar-nav>li>a {
+                font-size: 15px;
+            }
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h2 {
+                font-size: 25px;
+            }
+        }
+        /* iPhone 5 (портретный режим)----------- */
+        
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+            /* Сюда добавляем стили*/
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h1 {
+                top: 230px;
+                font-size: 25px;
+            }
+            .header_top img {
+                display: none;
+            }
+            .telephone {
+                margin-top: 55px;
+                margin-right: 160px;
+                text-align: center;
+            }
+            .modal-dialog {
+                right: auto;
+                left: 50%;
+                width: 310px;
+                margin: 25px;
+                padding: 0px;
+            }
+            .img_btn_form {
+                width: 160px;
+            }
+            .navbar-default .navbar-nav>li>a {
+                font-size: 15px;
+            }
+            .header_text h1 {
+                top: 215px;
+                font-size: 30px;
+            }
+            .header_text h2 {
+                font-size: 25px;
+            }
+        }

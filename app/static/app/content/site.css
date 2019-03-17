@@ -6,37 +6,45 @@
     position: absolute;
     top: 500px;
 }
+
 .navigations {
     line-height: 15px;
     margin-left: 70px;
 }
+
 .model_form {
     margin-top: 45px;
 }
+
 .model_form .phone {
     color: black;
     font-weight: bold;
     font-size: 16px;
 }
+
 .model_form img {
     width: 65px;
     float: left;
     padding: 5px;
     margin-top: -10px;
 }
+
 .modal-dialog {
     right: auto;
     left: 50%;
     width: 400px;
 }
+
 .model_form p {
     color: #ff6b00;
     font-size: 14px;
 }
+
 .telephone img {
     width: 65px;
     margin-top: -18px;
 }
+
 .telephone a {
     color: #ff6b00;
     font-size: 22px;
@@ -44,33 +52,40 @@
     font-weight: bold;
     font-family: 'Roboto Condensed Bold', sans-serif;
 }
+
 .telephone {
     margin-top: 55px;
 }
+
 .navbar-nav>li>a {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
     font-family: 'Roboto Condensed Bold', sans-serif;
 }
+
 .navbar-nav {
     float: none;
 }
+
 .navbar-default .navbar-nav>li>a {
     color: #000;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Roboto Condensed Bold', sans-serif;
 }
+
 .navbar-default {
     color: #fff;
 }
+
 .navbar-default {
     background-color: #d6d4dfb5;
     border-color: #d6d4df00;
     text-align: center;
     transition: .4s;
 }
+
 .bg-overlay {
     background: #39376999;
     top: 0;
@@ -80,6 +95,7 @@
     width: 100%;
     height: 100%;
 }
+
 .header {
     background-image: url('/static/image/header.jpg');
     background-size: cover;
@@ -87,12 +103,15 @@
     position: relative;
     background-repeat: no-repeat;
 }
+
 .h-100vh {
     height: 600px;
 }
+
 .header_top img {
     height: 90px;
 }
+
 .header_text h1 {
     position: absolute;
     text-align: center;
@@ -105,6 +124,7 @@
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .header_text h2 {
     position: absolute;
     text-align: center;
@@ -117,6 +137,7 @@
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .header_text h3 {
     position: absolute;
     text-align: center;
@@ -129,6 +150,7 @@
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .oformlenie h2 {
     text-align: left;
     top: 480px;
@@ -138,6 +160,7 @@
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .zak_btn button {
     text-align: center;
     color: #fff;
@@ -151,14 +174,17 @@
     width: 170px;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .navbar-nav {
     float: none;
     text-align: center;
 }
+
 .navbar-nav li {
     float: none;
     display: inline-block;
 }
+
 .modal-backdrop {
     position: fixed;
     top: 0;
@@ -168,6 +194,7 @@
     z-index: 0;
     background-color: #000;
 }
+
 .zakazat_spravku {
     background-image: url('/static/image/bck2_02.jpg');
     background-size: cover;
@@ -176,21 +203,28 @@
     background-repeat: no-repeat;
     height: auto;
 }
+
 .zakazat {
     padding: 50px;
 }
+
 .zakazat h2 {
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
-.priem_zayvki, .podtverjdenie_zakaza, .vipolnenie_zakaza, .oplata {
+
+.priem_zayvki,
+.podtverjdenie_zakaza,
+.vipolnenie_zakaza,
+.oplata {
     background-color: #ff6b00;
     width: 100%;
     height: 330px;
     position: relative;
 }
+
 .priem_zayvki p {
     color: #fff;
     padding: 70px 15px 15px 15px;
@@ -198,6 +232,7 @@
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .podtverjdenie_zakaza p {
     color: #fff;
     padding: 70px 15px 15px 15px;
@@ -205,10 +240,13 @@
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
+
+
 /*.form_nap {
     width: 80%;
     margin: 0 auto;
 }*/
+
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -219,6 +257,7 @@ hr {
     border-top: 2px solid #151212;
     width: 300px;
 }
+
 .vipolnenie_zakaza p {
     color: #fff;
     padding: 70px 15px 15px 15px;
@@ -226,6 +265,7 @@ hr {
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .oplata p {
     color: #fff;
     padding: 70px 15px 15px 15px;
@@ -233,6 +273,7 @@ hr {
     text-align: left;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .pz {
     position: absolute;
     background-color: #fff;
@@ -249,6 +290,7 @@ hr {
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .podz {
     position: absolute;
     background-color: #fff;
@@ -264,6 +306,7 @@ hr {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .vipz {
     position: absolute;
     background-color: #fff;
@@ -280,6 +323,7 @@ hr {
     font-weight: bold;
     font-family: 'Roboto Bold', sans-serif;
 }
+
 .opl {
     position: absolute;
     background-color: #fff;
@@ -295,31 +339,40 @@ hr {
     font-family: 'Roboto Bold', sans-serif;
     padding: 10px;
 }
+
 .podrobno {
     padding: 20px;
     margin: 20px;
 }
-.podrobno_models> .modal-body >.modal-dialog{
+
+.podrobno_models>.modal-body>.modal-dialog {
     width: 760px;
 }
-.podrobno_models .modal-dialog{
+
+.podrobno_models .modal-dialog {
     width: 760px;
 }
-.podrobno_models img{
+
+.podrobno_models img {
     width: 100%;
 }
-.ru_models .modal-dialog{
-     width: 760px;
-}
-.ru_models img{
-    width: 100%;
-}
-.ukr_models .modal-dialog{
+
+.ru_models .modal-dialog {
     width: 760px;
 }
-.ukr_models img{
+
+.ru_models img {
     width: 100%;
 }
+
+.ukr_models .modal-dialog {
+    width: 760px;
+}
+
+.ukr_models img {
+    width: 100%;
+}
+
 .podrobno a {
     position: absolute;
     left: 50%;
@@ -330,10 +383,12 @@ hr {
     line-height: 50px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .spravka_srochno {
     padding: 20px;
     margin: 20px;
 }
+
 .sroki h2 {
     text-align: center;
     text-transform: uppercase;
@@ -341,6 +396,7 @@ hr {
     color: black;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .certificate {
     background-image: url('/static/image/87_02.jpg');
     background-size: cover;
@@ -350,6 +406,7 @@ hr {
     height: auto;
     padding-top: 30px;
 }
+
 .certificate_ru h2 {
     text-align: center;
     text-transform: uppercase;
@@ -367,6 +424,7 @@ hr {
     margin-left: 30px;
     margin-bottom: 0px;
 }
+
 .certificate_uk h2 {
     text-align: center;
     text-transform: uppercase;
@@ -384,6 +442,7 @@ hr {
     margin-left: 30px;
     margin-bottom: 0px;
 }
+
 .work_day {
     background: #fff;
     box-shadow: #00000080 4px 4px;
@@ -394,14 +453,17 @@ hr {
     position: relative;
     display: block;
 }
+
 .work_day p {
     font-size: 30px;
     font-family: 'Open Sans Semibold', sans-serif;
     padding: 0px 0px 10px 25px;
 }
+
 .work_day span {
     font-weight: bold;
 }
+
 .work_day a {
     position: absolute;
     margin-left: 50px;
@@ -413,6 +475,7 @@ hr {
     text-align: center;
     transform: translateY(-50%)
 }
+
 .dostavka {
     background-image: url('/static/image/dostavka.jpg');
     background-size: cover;
@@ -421,6 +484,7 @@ hr {
     background-repeat: no-repeat;
     height: auto;
 }
+
 .dostavka h2 {
     font-size: 35px;
     font-family: 'Open Sans Semibold', sans-serif;
@@ -430,6 +494,7 @@ hr {
     color: #fff;
     line-height: 70px;
 }
+
 .dostavka p {
     font-size: 25px;
     font-family: 'Open Sans Semibold', sans-serif;
@@ -438,23 +503,28 @@ hr {
     font-weight: normal;
     color: #fff;
 }
+
 .dost_img {
     width: 250px;
     margin: auto;
     padding: 40px 5px 80px 5px;
 }
+
 .strelki {
     width: 100px;
     margin: auto;
     padding: 20px 0px 20px 0px;
 }
+
 .dost_img img {
     height: 195px;
     width: 255px;
 }
+
 .napishite_nam {
     background-color: #d4e1f7;
 }
+
 .napishite_nam h2 {
     text-align: center;
     color: #ff0000;
@@ -463,6 +533,7 @@ hr {
     font-size: 25px;
     padding: 20px 0px 20px 0px;
 }
+
 .sposob_oplati {
     background-image: url('/static/image/1212_02.png');
     background-size: auto;
@@ -471,90 +542,109 @@ hr {
     background-repeat: no-repeat;
     height: auto;
 }
+
 button {
     background-color: transparent;
     width: 305px;
     height: 60px;
     border: none;
 }
+
 .img_btn_form {
     width: 260px;
 }
+
 .sposob_oplati h2 {
     text-transform: uppercase;
     font-size: 50px;
     font-family: 'Open Sans Semibold', sans-serif;
     padding: 20px 20px 50px 20px;
 }
+
 .blok_nalich {
     margin-bottom: 100px;
 }
+
 .blok_carta {
     margin-bottom: 100px;
 }
+
 .blok_electo {
     margin-bottom: 100px;
 }
+
 .nalich {
     background: #f88e48bf;
     height: 350px;
     border-top-left-radius: 40px;
     padding: 20px;
 }
+
 .nalich img {
     margin: 0 auto;
 }
+
 .nalich h4 {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .nalich p {
     text-align: center;
     font-size: 20px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .carta img {
     margin: 0 auto;
 }
+
 .carta h4 {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .carta p {
     text-align: center;
     font-size: 20px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .carta {
     background: #f88e48bf;
     height: 350px;
     border-top-left-radius: 40px;
     padding: 20px;
 }
+
 .electo_pl img {
     margin: 0 auto;
 }
+
 .electo_pl h4 {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .electo_pl p {
     text-align: center;
     font-size: 20px;
     font-family: 'Open Sans Semibold', sans-serif;
 }
+
 .electo_pl {
     background: #f88e48bf;
     height: 350px;
     border-top-left-radius: 40px;
     padding: 20px;
 }
+
 .meg_center_lg {
     background-image: url('/static/image/1_02.jpg');
     background-size: cover;
@@ -564,6 +654,7 @@ button {
     height: auto;
     padding: 30px;
 }
+
 .meg_center_lg h2 {
     text-transform: uppercase;
     font-size: 40px;
@@ -571,6 +662,7 @@ button {
     font-weight: 600;
     margin-top: 60px;
 }
+
 .meg_center_lg h3 {
     text-transform: uppercase;
     font-size: 30px;
@@ -578,12 +670,14 @@ button {
     font-weight: 600;
     margin-top: 60px;
 }
+
 .meg_center_lg p {
     font-size: 30px;
     font-family: 'Roboto Condensed Regular', sans-serif;
     margin-top: 50px;
     text-align: justify;
 }
+
 .obrazci_spravok {
     background-image: url('/static/image/86_02.jpg');
     background-size: cover;
@@ -593,6 +687,7 @@ button {
     height: auto;
     padding: 30px;
 }
+
 .obrazci_spravok h2 {
     text-transform: uppercase;
     font-size: 40px;
@@ -600,16 +695,20 @@ button {
     font-family: 'Roboto Condensed Bold', sans-serif;
     margin: 40px 0 40px 0;
 }
+
 .meg_strelki img {
     margin: auto;
     padding: 10px;
 }
+
 .meg_center_lg .img_btn {
     margin: auto;
 }
+
 .obrz_spr2 img {
     height: 420px;
 }
+
 .btn-danger {
     color: #fff;
     background-color: #d9534f;
@@ -620,6 +719,7 @@ button {
     font-weight: 800;
     border-radius: 100px;
 }
+
 .thumbnail {
     display: inline-block;
     display: block;
@@ -635,15 +735,17 @@ button {
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 section {
     background-color: #d2d2d2;
 }
+
 footer {
     background-color: #393769;
     height: 100px;
 }
-.glyphicon {
 
+.glyphicon {
     position: relative;
     top: 25px;
     display: inline-block;
@@ -661,11 +763,12 @@ footer {
     padding: 5px;
     right: -183px;
     left: 45%;
-
 }
+
 .slideanim {
     visibility: hidden;
 }
+
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -673,6 +776,7 @@ footer {
     -webkit-animation-duration: 1s;
     visibility: visible;
 }
+
 @keyframes slide {
     0% {
         opacity: 0;
@@ -683,6 +787,7 @@ footer {
         transform: translateY(0%);
     }
 }
+
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
@@ -699,4 +804,16 @@ footer {
     margin-top: 10px;
     font-size: 40px;
     text-align: center;
+}
+
+@media only screen and (max-device-width: 667px) {
+    .header_top img {
+        height: 85px;
+        width: 230px;
+        display: none;
+    }
+    .navbar-default .navbar-brand {
+        color: #777;
+        display: none;
+    }
 }
