@@ -19,7 +19,7 @@ class ContactUs(models.Model):
     #fields =('contact_name', 'contact_email',' contact_phone','contact_message')
 
     def __str__(self):
-        # %s подставляет значения
+        # %s подставляет значения.
         return "Пользователь %s %s %s" % (self.contact_name, self.contact_email, self.date)
 
 

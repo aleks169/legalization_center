@@ -1,501 +1,247 @@
-        /* Смартфоны (портретный и альбомный режимы) ----------- */
-        
-        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            /* Сюда добавляем стили*/
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h1 {
-                top: 230px;
-                font-size: 25px;
-            }
-            .header_top img {
-                display: none;
-            }
-            .telephone {
-                margin-top: 55px;
-                margin-right: 160px;
-                text-align: center;
-            }
-            .modal-dialog {
-                right: auto;
-                left: 50%;
-                width: 310px;
-                margin: 25px;
-                padding: 0px;
-            }
-            .img_btn_form {
-                width: 160px;
-            }
-            .navbar-default .navbar-nav>li>a {
-                font-size: 15px;
-            }
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h2 {
-                font-size: 25px;
-            }
-        }
-        /* Смартфоны (альбомный режим) ----------- */
-        
-        @media only screen and (min-width: 321px) {
-            /* Сюда добавляем стили*/
-            /*      .header_text h1 {
-        top: 215px;
-        font-size: 30px;
-    }
+  /*==========  Mobile First Method  ==========*/
+
+  /* Custom, iPhone Retina */
+
+  @media only screen and (min-width: 320px) {}
+
+  /* Extra Small Devices, Phones */
+
+  @media only screen and (min-width: 480px) {}
+
+  /* Small Devices, Tablets */
+
+  @media only screen and (min-width: 768px) {
+      .img_btn_form {
+          width: 200px;
+      }
+      .telephone a {
+          font-size: 20px;
+      }
       .header_text h1 {
-    top: 230px;
-    font-size: 25px;
- }
- .header_top img {
-    display: none;
-    
- }
- .telephone {
-    margin-top: 55px;
-    margin-right: 160px;
-    text-align: center;
-}
-.modal-dialog {
-    right: auto;
-    left: 50%;
-    width: 310px;
-    margin: 25px;
-    padding: 0px;
-}
-.img_btn_form {
-    width: 160px;
-}
-.navbar-default .navbar-nav>li>a {
-    font-size: 15px;
-}
-.header_text h1 {
-    top: 215px;
-    font-size: 30px;
-}
-.header_text h2 {
-    font-size: 25px;
-}
-}
-/* Смартфоны (портретный режим) ----------- */
-            @media only screen and (max-width: 320px) {
-                .header_text h1 {
-                    top: 215px;
-                    font-size: 30px;
-                }
-                .header_text h1 {
-                    top: 230px;
-                    font-size: 25px;
-                }
-                .header_top img {
-                    display: none;
-                }
-                .telephone {
-                    margin-top: 55px;
-                    margin-right: 160px;
-                    text-align: center;
-                }
-                .modal-dialog {
-                    right: auto;
-                    left: 50%;
-                    width: 310px;
-                    margin: 25px;
-                    padding: 0px;
-                }
-                .img_btn_form {
-                    width: 160px;
-                }
-                .navbar-default .navbar-nav>li>a {
-                    font-size: 15px;
-                }
-                .header_text h1 {
-                    top: 215px;
-                    font-size: 30px;
-                }
-                .header_text h2 {
-                    font-size: 25px;
-                }
-            }
-            /* iPad (портретный и альбомный режимы) ----------- */
-            @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                /* Сюда добавляем стили*/
-                /*    .collapse {
-        display: block;
-    }
-    .header_top img {
-        height: 85px;
-        width: 230px;
-    }
-    .header_text h1 {
-        top: 215px;
-        font-size: 40px;
-    }
-    .header_text h2 {
-        font-size: 35px;
-    }
-    .header_text h3 {
-        font-size: 30px;
-    }
-    .oformlenie h2 {
-        font-size: 20px;
-        padding: 20px;
-    }
-    .zak_btn {
-        right: 50px;
-    }
-    .zak_btn button {
-        font-size: 15px;
-        width: 130px;
-    }
-    .zakazat h2 {
-        font-size: 30px;
-    }
-    .priem_zayvki, .podtverjdenie_zakaza, .vipolnenie_zakaza, .oplata {
-        height: 225px;
-        margin-bottom: 20px;
-    }
-    .sroki h2 {
-        font-size: 45px;
-    }
-    .priem_zayvki p {
-        text-align: center;
-    }
-    .podtverjdenie_zakaza p {
-        text-align: center;
-    }
-    .vipolnenie_zakaza p {
-        text-align: center;
-    }
-    .oplata p {
-        text-align: center;
-    }
-    .certificate_ru {
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-    .certificate_uk{
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-    hr {
-        width: 200px;
-    }
-    .work_day {
-        text-align: center;
-    }
-    .work_day a {
-        margin-left: 0px;
-        bottom: -15px;
-        transform: translateX(-50%);
-    }
-    .dostavka h2{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .dostavka p{
-        font-size: 20px;
-    }
-}
-}
-@media only screen and (max-device-width: 768px){
-.header_top img {
-    height: 85px;
-    width: 230px;
-    display: none;
-}
-@media only screen and (max-device-width: 768px)and (min-device-width: 480px){
-    .header_top img {
-    height: 85px;
-    width: 230px;
-    display: none;
-}
- .header_text h1 {
+          display: none;
+      }
+      .header_text h1 {
+          font-size: 40px;
+      }
+      .header_text h3 {
+          font-size: 30px;
+      }
+      .oformlenie h2 {
+          top: 480px;
+          font-size: 20px;
+      }
+      .zak_btn {
+          position: absolute;
+          top: 485px;
+          right: 20px;
+      }
+      .zak_btn button {
+          font-size: 15px;
+          padding: 5px 25px;
+      }
+      .zakazat h2 {
+          font-size: 30px;
+      }
+      .pz {
+          width: 70%;
+      }
+      .priem_zayvki p {
+          padding: 80px 15px 15px 15px;
+          font-size: 20px;
+          text-align: center;
+      }
+      .podtverjdenie_zakaza p {
+          padding: 80px 15px 15px 15px;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 20px;
+      }
+      .podz {
+          width: 70%;
+      }
+      .vipolnenie_zakaza p {
+          padding: 80px 15px 15px 15px;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 20px;
+      }
+      .vipz {
+          width: 70%;
+      }
+      .oplata p {
+          color: #fff;
+          padding: 80px 15px 15px 15px;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 20px;
+      }
+      .opl {
+          width: 70%;
+      }
+      .podrobno_models .modal-dialog {
+          width: 600px;
+      }
+      .sroki h2 {
+          font-size: 40px;
+      }
+      .certificate_ru h2 {
+          font-size: 20px;
+          width: 100%;
+          margin-left: 0px;
+          margin-bottom: 0px;
+      }
+      .work_day p {
+          font-size: 15px;
+      }
+      .certificate_uk h2 {
+          font-size: 20px;
+          width: 100%;
+          margin-left: 0px;
+          margin-bottom: 0px;
+      }
+      .work_day a {
+          position: absolute;
+          margin-left: 0px;
+          bottom: -30px;
+          text-align: center;
+          transform: translateY(0%);
+          font-size: 15px;
+      }
+      .ru_models .modal-dialog {
+          width: 600px;
+      }
+      .ukr_models .modal-dialog {
+          width: 600px;
+      }
+  }
 
-    top: 190px;
-    font-size: 35px;
-}
-.header_text h2 {
-    top: 300px;
-    font-size: 30px;
-}
-.header_text h3 {
+  /* Medium Devices, Desktops */
 
-    top: 360px;
+  @media only screen and (min-width: 992px) {
+      .navbar-default .navbar-nav>li>a {
+          font-size: 14px;
+      }
+      .header_top img {
+          height: auto;
+      }
+      .telephone a {
+          font-size: 20px;
+      }
+      .header_text h1 {
+          top: 205px;
+          font-size: 45px;
+      }
+      .header_text h2 {
+          top: 320px;
+          font-size: 40px;
+      }
+      .header_text h3 {
+          font-size: 30px;
+      }
+      .oformlenie h2 {
+          top: 470px;
+          font-size: 25px;
+      }
+      .zak_btn {
+          position: absolute;
+          top: 485px;
+      }
+      .img_btn_form {
+          width: 200px;
+      }
+      .work_day a {
+          position: absolute;
+          margin-left: 20px;
+          background-color: #428bca;
+          color: #fff;
+          bottom: -20px;
+          border-radius: 15px;
+          padding: 5px 10px;
+          text-align: center;
+          transform: translateY(-0%);
+      }
+      .work_day p {
+          font-size: 20px;
+          font-family: 'Open Sans Semibold', sans-serif;
+          padding: 0px 0px 10px 25px;
+      }
+      .certificate_ru h2 {
+          font-size: 25px;
+          width: 100%;
+          margin-left: 0px;
+          margin-bottom: 0px;
+      }
+      .certificate_uk h2 {
+          font-size: 25px;
+          width: 100%;
+          margin-left: 0px;
+          margin-bottom: 0px;
+      }
+      .pz {
+          padding: 5px 5px;
+          width: 170px;
+      }
+      .podz {
+          padding: 5px 5px;
+          width: 170px;
+      }
+      .vipz {
+          padding: 5px 5px;
+          width: 170px;
+      }
+      .opl {
+          font-size: 16px;
+          padding: 5px;
+          width: 170px;
+      }
+      .electo_pl h4 {
+          font-size: 26px;
+          line-height: 25px;
+      }
+      .electo_pl p {
+          font-size: 18px;
+      }
+      .meg_center_lg h2 {
+          font-size: 35px;
+          margin-top: 50px;
+      }
+      .meg_center_lg p {
+          font-size: 25px;
+          margin-top: 30px;
+          text-align: justify;
+      }
+      .meg_center_lg h3 {
+          font-size: 25px;
+          font-weight: 600;
+          margin-top: 50px;
+      }
+      .obrz_spr2 img {
+          height: 340px;
+      }
+  }
 
-    font-size: 25px;
- 
-}
-.oformlenie h2 {
-    top: 480px;
-    font-size: 20px;
+  /* Large Devices, Wide Screens */
 
-}
-.zak_btn button {
+  @media only screen and (min-width: 1200px) {}
 
-    font-size: 15px;
+  /*==========  Non-Mobile First Method  ==========*/
 
-    padding: 5px 30px;
+  /* Large Devices, Wide Screens */
 
-    width: 150px;
+  @media only screen and (max-width: 1200px) {}
 
-}
-.zak_btn {
-    position: absolute;
-    top: 480px;
-    right: 50px;
-}
-.zakazat h2 {
+  /* Medium Devices, Desktops */
 
-    font-size: 35px;
+  @media only screen and (max-width: 992px) {}
 
-}
+  /* Small Devices, Tablets */
 
-}
-@media only screen and (max-device-width: 667px) {
-    /* Сюда добавляем стили*/
-                .header_top img {
-                    display: none;
-                }
-                .telephone {
-                    margin-top: 55px;
-                    margin-right: 160px;
-                    text-align: center;
-                }
-                .modal-dialog {
-                    right: auto;
-                    left: 50%;
-                    width: 310px;
-                    margin: 25px;
-                    padding: 0px;
-                }
-                .img_btn_form {
-                    width: 160px;
-                }
-                .collapse {
-                    display: block;
-                }
-                .header_top img {
-                    height: 85px;
-                    width: 230px;
-                }
-                .header_text h1 {
-                    top: 215px;
-                    font-size: 40px;
-                }
-                .header_text h2 {
-                    font-size: 35px;
-                }
-                .header_text h3 {
-                    font-size: 30px;
-                }
-                .oformlenie h2 {
-                    font-size: 20px;
-                    padding: 20px;
-                }
-                .zak_btn {
-                    right: 50px;
-                }
-                .zak_btn button {
-                    font-size: 15px;
-                    width: 130px;
-                }
-                .zakazat h2 {
-                    font-size: 30px;
-                }
-                .priem_zayvki,
-                .podtverjdenie_zakaza,
-                .vipolnenie_zakaza,
-                .oplata {
-                    height: 225px;
-                    margin-bottom: 20px;
-                }
-                .sroki h2 {
-                    font-size: 45px;
-                }
-                .priem_zayvki p {
-                    text-align: center;
-                }
-                .podtverjdenie_zakaza p {
-                    text-align: center;
-                }
-                .vipolnenie_zakaza p {
-                    text-align: center;
-                }
-                .oplata p {
-                    text-align: center;
-                }
-                .certificate_ru {
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                }
-                .certificate_uk {
-                    margin-left: 50%;
-                    transform: translateX(-50%);
-                }
-                hr {
-                    width: 200px;
-                }
-                .work_day {
-                    text-align: center;
-                }
-                .work_day a {
-                    margin-left: 0px;
-                    bottom: -15px;
-                    transform: translateX(-50%);
-                }
-                .dostavka h2 {
-                    font-size: 30px;
-                    line-height: 40px;
-                }
-                .dostavka p {
-                    font-size: 20px;
-                }
-            }
-        }
-        /* iPad (альбомный режим) ----------- */
-        
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-            /* Сюда добавляем стили*/
-        }
-        /* iPad (портретный режим) ----------- */
-        
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-            /* Сюда добавляем стили*/
-        }
-        /* Настольные компьютеры и ноутбуки ----------- */
-        
-        @media only screen and (min-width: 1224px) {
-            /* Сюда добавляем стили*/
-        }
-        /* Большие экраны ----------- */
-        
-        @media only screen and (min-width: 1824px) {
-            /* Сюда добавляем стили*/
-        }
-        /* iPhone 5 (портретный и альбомный режимы)----------- */
-        
-        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-            /* Сюда добавляем стили*/
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h1 {
-                top: 230px;
-                font-size: 25px;
-            }
-            .header_top img {
-                display: none;
-            }
-            .telephone {
-                margin-top: 55px;
-                margin-right: 160px;
-                text-align: center;
-            }
-            .modal-dialog {
-                right: auto;
-                left: 50%;
-                width: 310px;
-                margin: 25px;
-                padding: 0px;
-            }
-            .img_btn_form {
-                width: 160px;
-            }
-            .navbar-default .navbar-nav>li>a {
-                font-size: 15px;
-            }
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h2 {
-                font-size: 25px;
-            }
-        }
-        /* iPhone 5 (альбомный режим)----------- */
-        
-        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-            /* Сюда добавляем стили*/
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h1 {
-                top: 230px;
-                font-size: 25px;
-            }
-            .header_top img {
-                display: none;
-            }
-            .telephone {
-                margin-top: 55px;
-                margin-right: 160px;
-                text-align: center;
-            }
-            .modal-dialog {
-                right: auto;
-                left: 50%;
-                width: 310px;
-                margin: 25px;
-                padding: 0px;
-            }
-            .img_btn_form {
-                width: 160px;
-            }
-            .navbar-default .navbar-nav>li>a {
-                font-size: 15px;
-            }
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h2 {
-                font-size: 25px;
-            }
-        }
-        /* iPhone 5 (портретный режим)----------- */
-        
-        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-            /* Сюда добавляем стили*/
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h1 {
-                top: 230px;
-                font-size: 25px;
-            }
-            .header_top img {
-                display: none;
-            }
-            .telephone {
-                margin-top: 55px;
-                margin-right: 160px;
-                text-align: center;
-            }
-            .modal-dialog {
-                right: auto;
-                left: 50%;
-                width: 310px;
-                margin: 25px;
-                padding: 0px;
-            }
-            .img_btn_form {
-                width: 160px;
-            }
-            .navbar-default .navbar-nav>li>a {
-                font-size: 15px;
-            }
-            .header_text h1 {
-                top: 215px;
-                font-size: 30px;
-            }
-            .header_text h2 {
-                font-size: 25px;
-            }
-        }
+  @media only screen and (max-width: 768px) {}
+
+  /* Extra Small Devices, Phones */
+
+  @media only screen and (max-width: 480px) {}
+
+  /* Custom, iPhone Retina */
+
+  /* @media only screen and (max-width: 320px) {}*/
